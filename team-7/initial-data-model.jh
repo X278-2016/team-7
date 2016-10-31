@@ -1,0 +1,38 @@
+
+
+
+entity LocationData {
+	mLatitude Double required
+    mLongitude Double required
+}
+
+entity PadSet {
+	mName String required
+    mLocationData LocationData required
+}
+
+entity EquipmentSet {
+	mName String required
+    mTemp Double required
+    mPressure Double required
+    mFlowRate Double required
+    mThreshold Threshold required
+}
+
+entity Metric {
+	mName String required
+    mValue Double required 
+    mThreshold Threshold 
+}
+
+entity Threshold {
+	mValue Double required
+}
+relationship OneToMany {
+	PadSet{PadName} to EquipmentSet{EquipmentSetName}
+}
+
+
+
+
+
