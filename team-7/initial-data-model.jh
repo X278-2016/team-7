@@ -12,10 +12,10 @@ entity PadSet {
 }
 
 entity EquipmentSet {
-	mName String required
-    mTemp Double required
-    mPressure Double required
-    mFlowRate Double required
+	mName Metric required
+    mTemp Metric required
+    mPressure Metric required
+    mFlowRate Metric required
     mThreshold Threshold required
 }
 
