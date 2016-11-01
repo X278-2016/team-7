@@ -1,39 +1,30 @@
 
-
-
-
-
 entity PadSet {
-	mName String required
-    mLatitude Double required
-    mLongitude Double required
+	name String required
+    latitude Double required
+    longitude Double required
 }
 
 entity EquipmentSet {
-	mName String required
+	name String required
 }
 
 entity Metric {
-	mName String required
-    mValue Double required 
+	name String required
+    value Double required
 }
 
 entity Threshold {
-	mValue Double required
+	value Double required
 }
 relationship OneToMany {
-	PadSet{PadName} to EquipmentSet{EquipmentSetName}
+	PadSet{equipmentSet(name)} to EquipmentSet{padSet(name)}
 }
 
 relationship OneToOne {
-	Metric{metricName} to Threshold{thresholdName}
+	Metric{threshold} to Threshold
 }
 
 relationship OneToMany {
-	EquipmentSet{equipmentName} to Metric{metricName}
+	EquipmentSet{metric} to Metric
 }
-
-
-
-
-

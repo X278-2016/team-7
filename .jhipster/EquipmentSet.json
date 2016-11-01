@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "metric",
+            "otherEntityName": "metric",
+            "otherEntityRelationshipName": "equipmentSet"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "padSet",
+            "otherEntityName": "padSet",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20161031032359",
+    "entityTableName": "equipment_set",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

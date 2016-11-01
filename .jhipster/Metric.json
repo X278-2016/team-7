@@ -1,0 +1,40 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "equipmentSet",
+            "otherEntityName": "equipmentSet",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "threshold",
+            "otherEntityName": "threshold",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "metric"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "value",
+            "fieldType": "Double",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20161031032300",
+    "entityTableName": "metric",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

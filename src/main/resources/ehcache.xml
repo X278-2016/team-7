@@ -37,5 +37,37 @@
            timeToLiveSeconds="3600">
     </cache>
     
+    <cache name="org.jhipster.com.domain.EquipmentSet"
+                               timeToLiveSeconds="3600">
+                        </cache>
+                        
+    <cache name="org.jhipster.com.domain.EquipmentSet.equipmentNames"
+                               timeToLiveSeconds="3600">
+                        </cache>
+                        
+    <cache name="org.jhipster.com.domain.Metric"
+                               timeToLiveSeconds="3600">
+                        </cache>
+                        
+    <cache name="org.jhipster.com.domain.Threshold"
+                               timeToLiveSeconds="3600">
+                        </cache>
+                        
+    <cache name="org.jhipster.com.domain.PadSet"
+                               timeToLiveSeconds="3600">
+                        </cache>
+                        
+    <cache name="org.jhipster.com.domain.PadSet.padNames"
+                               timeToLiveSeconds="3600">
+                        </cache>
+                        
+    <cache name="org.jhipster.com.domain.PadSet.equipmentSets"
+                               timeToLiveSeconds="3600">
+                        </cache>
+                        
+    <cache name="org.jhipster.com.domain.EquipmentSet.metrics"
+                               timeToLiveSeconds="3600">
+                        </cache>
+                        
     <!-- jhipster-needle-ehcache-add-entry -->
 </ehcache>
