@@ -1,0 +1,39 @@
+
+
+
+
+
+entity PadSet {
+	mName String required
+    mLatitude Double required
+    mLongitude Double required
+}
+
+entity EquipmentSet {
+	mName String required
+}
+
+entity Metric {
+	mName String required
+    mValue Double required 
+}
+
+entity Threshold {
+	mValue Double required
+}
+relationship OneToMany {
+	PadSet{PadName} to EquipmentSet{EquipmentSetName}
+}
+
+relationship OneToOne {
+	Metric{metricName} to Threshold{thresholdName}
+}
+
+relationship OneToMany {
+	EquipmentSet{equipmentName} to Metric{metricName}
+}
+
+
+
+
+
