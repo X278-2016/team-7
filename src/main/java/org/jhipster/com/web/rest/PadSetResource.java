@@ -10,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -47,9 +46,7 @@ public class PadSetResource {
      * @return the ResponseEntity with status 201 (Created) and with body the new padSet, or with status 400 (Bad Request) if the padSet has already an ID
      * @throws URISyntaxException if the Location URI syntax is incorrect
      */
-    @RequestMapping(value = "/pad-sets",
-        method = RequestMethod.POST,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping("/pad-sets")
     @Timed
     public ResponseEntity<PadSet> createPadSet(@Valid @RequestBody PadSet padSet) throws URISyntaxException {
         log.debug("REST request to save PadSet : {}", padSet);
@@ -72,9 +69,7 @@ public class PadSetResource {
      * or with status 500 (Internal Server Error) if the padSet couldnt be updated
      * @throws URISyntaxException if the Location URI syntax is incorrect
      */
-    @RequestMapping(value = "/pad-sets",
-        method = RequestMethod.PUT,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @PutMapping("/pad-sets")
     @Timed
     public ResponseEntity<PadSet> updatePadSet(@Valid @RequestBody PadSet padSet) throws URISyntaxException {
         log.debug("REST request to update PadSet : {}", padSet);
@@ -93,9 +88,7 @@ public class PadSetResource {
      *
      * @return the ResponseEntity with status 200 (OK) and the list of padSets in body
      */
-    @RequestMapping(value = "/pad-sets",
-        method = RequestMethod.GET,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping("/pad-sets")
     @Timed
     public List<PadSet> getAllPadSets() {
         log.debug("REST request to get all PadSets");
@@ -109,9 +102,7 @@ public class PadSetResource {
      * @param id the id of the padSet to retrieve
      * @return the ResponseEntity with status 200 (OK) and with body the padSet, or with status 404 (Not Found)
      */
-    @RequestMapping(value = "/pad-sets/{id}",
-        method = RequestMethod.GET,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping("/pad-sets/{id}")
     @Timed
     public ResponseEntity<PadSet> getPadSet(@PathVariable Long id) {
         log.debug("REST request to get PadSet : {}", id);
@@ -129,9 +120,7 @@ public class PadSetResource {
      * @param id the id of the padSet to delete
      * @return the ResponseEntity with status 200 (OK)
      */
-    @RequestMapping(value = "/pad-sets/{id}",
-        method = RequestMethod.DELETE,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @DeleteMapping("/pad-sets/{id}")
     @Timed
     public ResponseEntity<Void> deletePadSet(@PathVariable Long id) {
         log.debug("REST request to delete PadSet : {}", id);
@@ -147,9 +136,7 @@ public class PadSetResource {
      * @param query the query of the padSet search 
      * @return the result of the search
      */
-    @RequestMapping(value = "/_search/pad-sets",
-        method = RequestMethod.GET,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping("/_search/pad-sets")
     @Timed
     public List<PadSet> searchPadSets(@RequestParam String query) {
         log.debug("REST request to search PadSets for query {}", query);

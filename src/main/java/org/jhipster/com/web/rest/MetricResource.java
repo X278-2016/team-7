@@ -10,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -47,9 +46,7 @@ public class MetricResource {
      * @return the ResponseEntity with status 201 (Created) and with body the new metric, or with status 400 (Bad Request) if the metric has already an ID
      * @throws URISyntaxException if the Location URI syntax is incorrect
      */
-    @RequestMapping(value = "/metrics",
-        method = RequestMethod.POST,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping("/metrics")
     @Timed
     public ResponseEntity<Metric> createMetric(@Valid @RequestBody Metric metric) throws URISyntaxException {
         log.debug("REST request to save Metric : {}", metric);
@@ -72,9 +69,7 @@ public class MetricResource {
      * or with status 500 (Internal Server Error) if the metric couldnt be updated
      * @throws URISyntaxException if the Location URI syntax is incorrect
      */
-    @RequestMapping(value = "/metrics",
-        method = RequestMethod.PUT,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @PutMapping("/metrics")
     @Timed
     public ResponseEntity<Metric> updateMetric(@Valid @RequestBody Metric metric) throws URISyntaxException {
         log.debug("REST request to update Metric : {}", metric);
@@ -93,9 +88,7 @@ public class MetricResource {
      *
      * @return the ResponseEntity with status 200 (OK) and the list of metrics in body
      */
-    @RequestMapping(value = "/metrics",
-        method = RequestMethod.GET,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping("/metrics")
     @Timed
     public List<Metric> getAllMetrics() {
         log.debug("REST request to get all Metrics");
@@ -109,9 +102,7 @@ public class MetricResource {
      * @param id the id of the metric to retrieve
      * @return the ResponseEntity with status 200 (OK) and with body the metric, or with status 404 (Not Found)
      */
-    @RequestMapping(value = "/metrics/{id}",
-        method = RequestMethod.GET,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping("/metrics/{id}")
     @Timed
     public ResponseEntity<Metric> getMetric(@PathVariable Long id) {
         log.debug("REST request to get Metric : {}", id);
@@ -129,9 +120,7 @@ public class MetricResource {
      * @param id the id of the metric to delete
      * @return the ResponseEntity with status 200 (OK)
      */
-    @RequestMapping(value = "/metrics/{id}",
-        method = RequestMethod.DELETE,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @DeleteMapping("/metrics/{id}")
     @Timed
     public ResponseEntity<Void> deleteMetric(@PathVariable Long id) {
         log.debug("REST request to delete Metric : {}", id);
@@ -147,9 +136,7 @@ public class MetricResource {
      * @param query the query of the metric search 
      * @return the result of the search
      */
-    @RequestMapping(value = "/_search/metrics",
-        method = RequestMethod.GET,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping("/_search/metrics")
     @Timed
     public List<Metric> searchMetrics(@RequestParam String query) {
         log.debug("REST request to search Metrics for query {}", query);

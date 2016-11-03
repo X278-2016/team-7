@@ -1,6 +1,6 @@
 {
   "generator-jhipster": {
-    "jhipsterVersion": "3.8.0",
+    "jhipsterVersion": "3.10.0",
     "baseName": "team7",
     "packageName": "org.jhipster.com",
     "packageFolder": "org/jhipster/com",
@@ -21,6 +21,7 @@
     "applicationType": "monolith",
     "testFrameworks": [],
     "jhiPrefix": "jhi",
-    "enableTranslation": false
+    "enableTranslation": false,
+    "serviceDiscoveryType": false
   }
 }

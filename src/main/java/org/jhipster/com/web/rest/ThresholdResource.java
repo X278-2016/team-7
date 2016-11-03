@@ -10,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -47,9 +46,7 @@ public class ThresholdResource {
      * @return the ResponseEntity with status 201 (Created) and with body the new threshold, or with status 400 (Bad Request) if the threshold has already an ID
      * @throws URISyntaxException if the Location URI syntax is incorrect
      */
-    @RequestMapping(value = "/thresholds",
-        method = RequestMethod.POST,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping("/thresholds")
     @Timed
     public ResponseEntity<Threshold> createThreshold(@Valid @RequestBody Threshold threshold) throws URISyntaxException {
         log.debug("REST request to save Threshold : {}", threshold);
@@ -72,9 +69,7 @@ public class ThresholdResource {
      * or with status 500 (Internal Server Error) if the threshold couldnt be updated
      * @throws URISyntaxException if the Location URI syntax is incorrect
      */
-    @RequestMapping(value = "/thresholds",
-        method = RequestMethod.PUT,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @PutMapping("/thresholds")
     @Timed
     public ResponseEntity<Threshold> updateThreshold(@Valid @RequestBody Threshold threshold) throws URISyntaxException {
         log.debug("REST request to update Threshold : {}", threshold);
@@ -93,9 +88,7 @@ public class ThresholdResource {
      *
      * @return the ResponseEntity with status 200 (OK) and the list of thresholds in body
      */
-    @RequestMapping(value = "/thresholds",
-        method = RequestMethod.GET,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping("/thresholds")
     @Timed
     public List<Threshold> getAllThresholds() {
         log.debug("REST request to get all Thresholds");
@@ -109,9 +102,7 @@ public class ThresholdResource {
      * @param id the id of the threshold to retrieve
      * @return the ResponseEntity with status 200 (OK) and with body the threshold, or with status 404 (Not Found)
      */
-    @RequestMapping(value = "/thresholds/{id}",
-        method = RequestMethod.GET,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping("/thresholds/{id}")
     @Timed
     public ResponseEntity<Threshold> getThreshold(@PathVariable Long id) {
         log.debug("REST request to get Threshold : {}", id);
@@ -129,9 +120,7 @@ public class ThresholdResource {
      * @param id the id of the threshold to delete
      * @return the ResponseEntity with status 200 (OK)
      */
-    @RequestMapping(value = "/thresholds/{id}",
-        method = RequestMethod.DELETE,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @DeleteMapping("/thresholds/{id}")
     @Timed
     public ResponseEntity<Void> deleteThreshold(@PathVariable Long id) {
         log.debug("REST request to delete Threshold : {}", id);
@@ -147,9 +136,7 @@ public class ThresholdResource {
      * @param query the query of the threshold search 
      * @return the result of the search
      */
-    @RequestMapping(value = "/_search/thresholds",
-        method = RequestMethod.GET,
-        produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping("/_search/thresholds")
     @Timed
     public List<Threshold> searchThresholds(@RequestParam String query) {
         log.debug("REST request to search Thresholds for query {}", query);

@@ -8,14 +8,13 @@ buildscript {
         maven { url "https://plugins.gradle.org/m2/" }
     }
     dependencies {
-        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.0.1"
-        classpath "net.ltgt.gradle:gradle-apt-plugin:0.6"
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.1"
+        classpath "net.ltgt.gradle:gradle-apt-plugin:0.9"
         classpath "org.springframework.boot:spring-boot-gradle-plugin:${spring_boot_version}"
         classpath "org.springframework.build.gradle:propdeps-plugin:0.0.7"
-        classpath "com.moowork.gradle:gradle-node-plugin:0.12"
-        classpath "com.moowork.gradle:gradle-gulp-plugin:0.12"
-        classpath "se.transmode.gradle:gradle-docker:1.2"
-        classpath "io.spring.gradle:dependency-management-plugin:0.5.6.RELEASE"
+        classpath "com.moowork.gradle:gradle-node-plugin:0.13"
+        classpath "com.moowork.gradle:gradle-gulp-plugin:0.13"
+        classpath "io.spring.gradle:dependency-management-plugin:0.6.1.RELEASE"
         //jhipster-needle-gradle-buildscript-dependency - JHipster will add additional gradle build script plugins here
     }
 }
@@ -136,7 +135,7 @@ dependencies {
         exclude(module: 'metrics-healthchecks')
     } 
     compile "org.hibernate:hibernate-core:${hibernate_entitymanager_version}"
-    compile("com.zaxxer:HikariCP:${HikariCP_version}") {
+    compile("com.zaxxer:HikariCP") {
         exclude(module: 'tools')
     }
     compile "org.apache.commons:commons-lang3:${commons_lang_version}"
@@ -170,9 +169,7 @@ dependencies {
     }
     compile "org.springframework.boot:spring-boot-starter-undertow"
     compile "org.springframework.boot:spring-boot-starter-thymeleaf"
-    compile "org.springframework.cloud:spring-cloud-cloudfoundry-connector"
-    compile "org.springframework.cloud:spring-cloud-spring-service-connector"
-    compile "org.springframework.cloud:spring-cloud-localconfig-connector"
+    compile "org.springframework.boot:spring-boot-starter-cloud-connectors"
     compile ("org.springframework:spring-context-support") {
         exclude(module: 'quartz')
     }
@@ -182,6 +179,7 @@ dependencies {
     compile("io.springfox:springfox-swagger2:${springfox_version}"){
         exclude module: 'mapstruct'
     }
+    compile "io.springfox:springfox-bean-validators:${springfox_version}"
     compile "mysql:mysql-connector-java"
     compile "com.h2database:h2"
     compile "fr.ippon.spark.metrics:metrics-spark-reporter:${metrics_spark_reporter_version}"
@@ -196,7 +194,6 @@ dependencies {
     testCompile "org.mockito:mockito-core"
     testCompile "com.mattbertolini:liquibase-slf4j:${liquibase_slf4j_version}"
     testCompile "org.hamcrest:hamcrest-library"
-    
     
     optional "org.springframework.boot:spring-boot-configuration-processor:${spring_boot_version}"
     //jhipster-needle-gradle-dependency - JHipster will add additional dependencies here

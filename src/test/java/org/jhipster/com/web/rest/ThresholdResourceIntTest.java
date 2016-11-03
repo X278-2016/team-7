@@ -39,7 +39,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest(classes = Team7App.class)
 public class ThresholdResourceIntTest {
 
-
     private static final Double DEFAULT_VALUE = 1D;
     private static final Double UPDATED_VALUE = 2D;
 
