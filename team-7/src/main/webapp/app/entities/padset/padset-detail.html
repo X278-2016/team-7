@@ -1,0 +1,31 @@
+
+<div>
+    <h2><span>Padset</span> {{vm.padset.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>M Pad Set Name</span></dt>
+        <dd>
+            <span>{{vm.padset.mPadSetName}}</span>
+        </dd>
+        <dt><span>M Latitude</span></dt>
+        <dd>
+            <span>{{vm.padset.mLatitude}}</span>
+        </dd>
+        <dt><span>M Longitude</span></dt>
+        <dd>
+            <span>{{vm.padset.mLongitude}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="padset-detail.edit({id:vm.padset.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>

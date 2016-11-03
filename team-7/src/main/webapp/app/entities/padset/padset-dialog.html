@@ -1,0 +1,70 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myPadsetLabel">Create or edit a Padset</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.padset.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.padset.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_mPadSetName">M Pad Set Name</label>
+            <input type="text" class="form-control" name="mPadSetName" id="field_mPadSetName"
+                    ng-model="vm.padset.mPadSetName"
+                    required />
+            <div ng-show="editForm.mPadSetName.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.mPadSetName.$error.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_mLatitude">M Latitude</label>
+            <input type="number" class="form-control" name="mLatitude" id="field_mLatitude"
+                    ng-model="vm.padset.mLatitude"
+                    required />
+            <div ng-show="editForm.mLatitude.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.mLatitude.$error.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.mLatitude.$error.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_mLongitude">M Longitude</label>
+            <input type="number" class="form-control" name="mLongitude" id="field_mLongitude"
+                    ng-model="vm.padset.mLongitude"
+                    required />
+            <div ng-show="editForm.mLongitude.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.mLongitude.$error.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.mLongitude.$error.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

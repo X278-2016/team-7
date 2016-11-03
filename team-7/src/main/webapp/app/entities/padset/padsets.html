@@ -1,0 +1,137 @@
+
+<div>
+    <h2>Padsets</h2>
+    <script type="text/javascript" src="app/entities/padset/getData.js"></script>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="padset.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span class="hidden-xs" >
+                        Create new Padset
+                    </span>
+                </button>
+            </div>
+            <div class="col-xs-8 no-padding-right">
+                <form name="searchForm" class="form-inline">
+                    <div class="input-group pull-right" >
+                        <input type="text" class="form-control" ng-model="vm.searchQuery" id="searchQuery" placeholder="Query">
+                        <span  class="input-group-btn width-min" >
+                            <button class="btn btn-info" ng-click="vm.search(vm.searchQuery)">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                        <span class="input-group-btn width-min" ng-if="vm.currentSearch">
+                            <button class="btn btn-info" ng-click="vm.clear()">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>M Pad Set Name</span></th>
+                    <th><span>M Latitude</span></th>
+                    <th><span>M Longitude</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="padset in vm.padsets track by padset.id">
+                    <td><a ui-sref="padset-detail({id:padset.id})">{{padset.id}}</a></td>
+                    <td>{{padset.mPadSetName}}</td>
+                    <td>{{padset.mLatitude}}</td>
+                    <td>{{padset.mLongitude}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="padset-detail({id:padset.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="padset.edit({id:padset.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="padset.delete({id:padset.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+
+    <button type="button" id="viewMapButton" onclick="initMap()"> View Map </button>
+
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+
+    <div id="map">
+    <script>
+      function initMap() {
+        //Get a list of latitude, longitude and names from the 
+
+        
+        var geolocatedArray = makeAPIcall();
+        setTimeout(function() {
+            console.log(geolocatedArray);
+            console.log(JSON.stringify(geolocatedArray));
+            var uluru = {lat: 0.0, lng: 0.0};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 4,
+                  center: uluru
+                });
+                for(var x in geolocatedArray){
+                    var mylat = geolocatedArray[x]['latitude'];
+                    var mylong = geolocatedArray[x]['longitude'];
+
+                    console.log(x);
+                    console.log(JSON.stringify(x));
+
+                    var myposition = {lat: mylat, lng: mylong};
+                    console.log(myposition);
+                    console.log(JSON.stringify(myposition));
+                    var marker = new google.maps.Marker({
+                        position: myposition,
+                        map: map
+                    });
+
+                }
+                }, 10000);
+        
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAep8QM3NsXA8RBwc59jtoeEZvzQ8w-ER8&callback=initMap">
+    </script>
+
+
+
+
+    </div>
+
+
+    </div>
+</div>
