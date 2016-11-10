@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # team7
 
 This application was generated using JHipster 3.8.0, you can find documentation and help at [https://jhipster.github.io/documentation-archive/v3.8.0](https://jhipster.github.io/documentation-archive/v3.8.0).
@@ -103,3 +104,6 @@ To set up a CI environment, consult the [Setting up Continuous Integration][] pa
 [Karma]: http://karma-runner.github.io/
 [Jasmine]: http://jasmine.github.io/2.0/introduction.html
 [Protractor]: https://angular.github.io/protractor/
+=======
+"# Team-7 Readme" 
+>>>>>>> 55c5b90b3badec9f2101b4a3a8abf8789d8bc953
