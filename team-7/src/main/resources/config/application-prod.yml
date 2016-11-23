@@ -75,7 +75,7 @@ jhipster:
     security:
         rememberMe:
             # security key (this key should be unique for your application, and kept secret)
-            key: ede0ec3260adf9946dc33ba4c9f9b9b6068c7b00
+            key: 8c6b7bc44d24da83056927afd4c0b6f0d4e56d47
     mail: # specific JHipster mail property, for standard properties see MailProperties
         from: team7@localhost
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration

@@ -53,7 +53,7 @@ public class PadsetDeserializer extends StdDeserializer<Padset> {
 		 System.out.println(myPadset);
 		
 		
-		 return null;
+		 return myPadset;
 	}
 
  
@@ -66,10 +66,12 @@ public class PadsetDeserializer extends StdDeserializer<Padset> {
 		JsonNode node = jp.getCodec().readTree(jp);
 		
 		System.out.println(node);
-		JsonNode node2 = node.get("first_name");
-		JsonNode node3 = node2.get("General");
+		
+		//Gets Location
+		JsonNode first_name = node.get("first_name");
+		JsonNode node3 = first_name.get("General");
 		JsonNode node4 = node3.get("Value");
-		System.out.println(node2);
+		System.out.println(first_name);
 		System.out.println(node3);
 		System.out.println(node4);
 		
@@ -87,9 +89,50 @@ public class PadsetDeserializer extends StdDeserializer<Padset> {
 		myPadset.setmLatitude(latitudeDouble);
 		myPadset.setmLongitude(longitudeDouble);
 		myPadset.setmPadSetName("Test Padset");
+		//Cooling Coils
+		myPadset.setCoolingCoilsNominalSensibleHeatRatio(first_name.get("Cooling Coils").get("Nominal Sensible Heat Ratio").get("DETAILED COOLING COIL").asDouble());
+		myPadset.setCoolingCoilsNominalTotalCapacity(first_name.get("Cooling Coils").get("Nominal Total Capacity [W]").get("DETAILED COOLING COIL").asDouble());
+		//Heating Coils
+		myPadset.setHeatingCoilsNominalTotalCapacityReheatCoilZone1(first_name.get("Heating Coils").get("Nominal Total Capacity [W]").get("REHEAT COIL ZONE 1").asDouble());
+		myPadset.setHeatingCoilsNominalTotalCapacityReheatCoilZone2(first_name.get("Heating Coils").get("Nominal Total Capacity [W]").get("REHEAT COIL ZONE 2").asDouble());
+		myPadset.setHeatingCoilsNominalTotalCapacityReheatCoilZone3(first_name.get("Heating Coils").get("Nominal Total Capacity [W]").get("REHEAT COIL ZONE 3").asDouble());
+		//Fans
+		myPadset.setFanMaxAirFlowRate(first_name.get("Fans").get("Max Air Flow Rate [m3/s]").get("SUPPLY FAN 1").asDouble());
+		myPadset.setFanMotorHeatInAirFraction(first_name.get("Fans").get("Motor Heat In Air Fraction").get("SUPPLY FAN 1").asDouble());
+		myPadset.setFanRatedElectricPower(first_name.get("Fans").get("Rated Electric Power [W]").get("SUPPLY FAN 1").asDouble());
+		myPadset.setFanRatedPowerPerMaxAirFlowRate(first_name.get("Fans").get("Rated Power Per Max Air Flow Rate [W-s/m3]").get("SUPPLY FAN 1").asDouble());
+		myPadset.setFanTotalEfficiency(first_name.get("Fans").get("Total Efficiency [W/W]").get("SUPPLY FAN 1").asDouble());
+		//pumps
+		myPadset.setPumpsPowerPerWaterFlowRateCircPump(first_name.get("Pumps").get("Power Per Water Flow Rate [W-s/m3]").get("CIRC PUMP").asDouble());
+		myPadset.setPumpsPowerPerWaterFlowRateCondCircPump(first_name.get("Pumps").get("Power Per Water Flow Rate [W-s/m3]").get("COND CIRC PUMP").asDouble());
+		myPadset.setPumpsPowerPerWaterFlowRateHwCircPump(first_name.get("Pumps").get("Power Per Water Flow Rate [W-s/m3]").get("HW CIRC PUMP").asDouble());
 		
-		//Test ID, should never be used
-		myPadset.setId(new Long(-1));
+		myPadset.setPumpsHeadCircPump(first_name.get("Pumps").get("Head [pa]").get("CIRC PUMP").asDouble());
+		myPadset.setPumpsHeadCondCircPump(first_name.get("Pumps").get("Head [pa]").get("COND CIRC PUMP").asDouble());
+		myPadset.setPumpsHeadHwCircPump(first_name.get("Pumps").get("Head [pa]").get("HW CIRC PUMP").asDouble());
+		
+		myPadset.setPumpsElectricPowerCircPump(first_name.get("Pumps").get("Electric Power [W]").get("CIRC PUMP").asDouble());
+		myPadset.setPumpsElectricPowerCondCircPump(first_name.get("Pumps").get("Electric Power [W]").get("COND CIRC PUMP").asDouble());
+		myPadset.setPumpsPowerPerWaterFlowRateHwCircPump(first_name.get("Pumps").get("Electric Power [W]").get("HW CIRC PUMP").asDouble());
+		
+		myPadset.setPumpsMotorEfficiencyCircPump(first_name.get("Pumps").get("Motor Efficiency [W/W]").get("CIRC PUMP").asDouble());
+		myPadset.setPumpsMotorEfficiencyCondCircPump(first_name.get("Pumps").get("Motor Efficiency [W/W]").get("COND CIRC PUMP").asDouble());
+		myPadset.setPumpsMotorEfficiencyHwCircPump(first_name.get("Pumps").get("Motor Efficiency [W/W]").get("HW CIRC PUMP").asDouble());
+		
+		myPadset.setPumpsWaterFlowCircPump(first_name.get("Pumps").get("Water Flow [m3/s]").get("CIRC PUMP").asDouble());
+		myPadset.setPumpsWaterFlowCondCircPump(first_name.get("Pumps").get("Water Flow [m3/s]").get("COND CIRC PUMP").asDouble());
+		myPadset.setPumpsWaterFlowHwCircPump(first_name.get("Pumps").get("Water Flow [m3/s]").get("HW CIRC PUMP").asDouble());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		System.out.println(myPadset);
 		return myPadset;
 	}

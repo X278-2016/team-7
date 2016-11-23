@@ -1,0 +1,22 @@
+
+entity Padset {
+	mPadSetName String required
+    mLatitude Double required
+    mLongitude Double required
+}
+
+entity Equipmentset {
+	mEquipmentSetName String required
+}
+
+entity Metric {
+	mMetricName String required
+    mMetricValue Double required 
+}
+
+entity Threshold {
+	mThresholdValue Double required
+}
+
+
+

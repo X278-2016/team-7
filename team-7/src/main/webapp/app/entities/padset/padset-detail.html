@@ -1,5 +1,6 @@
 
 <div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.js"></script>
     <h2><span>Padset</span> {{vm.padset.id}}</h2>
     <hr>
     <jhi-alert-error></jhi-alert-error>
@@ -16,7 +17,111 @@
         <dd>
             <span>{{vm.padset.mLongitude}}</span>
         </dd>
+        <dt><span>Cooling Coils Nominal Sensible Heat Ratio</span></dt>
+        <dd>
+            <span>{{vm.padset.coolingCoilsNominalSensibleHeatRatio}}</span>
+        </dd>
+        <dt><span>Cooling Coils Nominal Total Capacity</span></dt>
+        <dd>
+            <span>{{vm.padset.coolingCoilsNominalTotalCapacity}}</span>
+        </dd>
+        <dt><span>Heating Coils Nominal Total Capacity Reheat Coil Zone 1</span></dt>
+        <dd>
+            <span>{{vm.padset.heatingCoilsNominalTotalCapacityReheatCoilZone1}}</span>
+        </dd>
+        <dt><span>Heating Coils Nominal Total Capacity Reheat Coil Zone 2</span></dt>
+        <dd>
+            <span>{{vm.padset.heatingCoilsNominalTotalCapacityReheatCoilZone2}}</span>
+        </dd>
+        <dt><span>Heating Coils Nominal Total Capacity Reheat Coil Zone 3</span></dt>
+        <dd>
+            <span>{{vm.padset.heatingCoilsNominalTotalCapacityReheatCoilZone3}}</span>
+        </dd>
+        <dt><span>Fan Max Air Flow Rate</span></dt>
+        <dd>
+            <span>{{vm.padset.fanMaxAirFlowRate}}</span>
+        </dd>
+        <dt><span>Fan Rated Electric Power</span></dt>
+        <dd>
+            <span>{{vm.padset.fanRatedElectricPower}}</span>
+        </dd>
+        <dt><span>Fan Rated Power Per Max Air Flow Rate</span></dt>
+        <dd>
+            <span>{{vm.padset.fanRatedPowerPerMaxAirFlowRate}}</span>
+        </dd>
+        <dt><span>Fan Motor Heat In Air Fraction</span></dt>
+        <dd>
+            <span>{{vm.padset.fanMotorHeatInAirFraction}}</span>
+        </dd>
+        <dt><span>Fan Total Efficiency</span></dt>
+        <dd>
+            <span>{{vm.padset.fanTotalEfficiency}}</span>
+        </dd>
+        <dt><span>Pumps Power Per Water Flow Rate Circ Pump</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsPowerPerWaterFlowRateCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Power Per Water Flow Rate Hw Circ Pump</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsPowerPerWaterFlowRateHwCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Power Per Water Flow Rate Cond Circ Pump</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsPowerPerWaterFlowRateCondCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Head Circ Pump</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsHeadCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Head Hw Circ Pump</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsHeadHwCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Head Cond Circ Pump</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsHeadCondCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Electric Power Circ Pump</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsElectricPowerCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Electric Power Hw Circ Pump</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsElectricPowerHwCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Electric Power Cond Circ Pump</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsElectricPowerCondCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Motor Efficiency Circ Pump</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsMotorEfficiencyCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Motor Efficiency Hw Circ Pump</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsMotorEfficiencyHwCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Motor Efficiency Cond Circ Pump</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsMotorEfficiencyCondCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Water Flow Circ Pump</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsWaterFlowCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Water Flow Hw Circ Pump</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsWaterFlowHwCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Water Flow Cond Circ Pump</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsWaterFlowCondCircPump}}</span>
+        </dd>
     </dl>
+    
+    <button ng-click="makeAPIcall(vm.padset.id)"> Get Data</button>
+    
+
 
     <button type="submit"
             ui-sref="{{ vm.previousState }}"
@@ -28,4 +133,18 @@
         <span class="glyphicon glyphicon-pencil"></span>
         <span class="hidden-xs hidden-sm"> Edit</span>
     </button>
+    
+    
+    <canvas id="coolingCoilNominalTotalCapacityGraph" width="400" height="400"></canvas>
+    <canvas id="coolingCoilNominalSensibleHeatRatioGraph" width="400" height="400"></canvas>
+    
+    <canvas id="fanGraph1" width="400" height="400"></canvas>
+    <canvas id="fanGraph2" width="400" height="400"></canvas>
+    
+    <canvas id="heatingCoilGraph1" width="400" height="400"></canvas>
+    
+    <canvas id="pumpsGraph1" width="400" height="800"></canvas>
+    <canvas id="pumpsGraph2" width="400" height="400"></canvas>
+
 </div>
+

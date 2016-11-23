@@ -1,0 +1,52 @@
+
+
+
+
+
+entity Padset {
+	mPadSetName String required
+    mLatitude Double required
+    mLongitude Double required
+    
+    coolingCoilsNominalSensibleHeatRatio Double 
+    coolingCoilsNominalTotalCapacity Double
+    coolingCoilsNominalSensibleHeatRatio Double
+    
+    heatingCoilsNominalTotalCapacityReheatCoilZone1 Double
+    heatingCoilsNominalTotalCapacityReheatCoilZone2 Double
+    heatingCoilsNominalTotalCapacityReheatCoilZone3 Double
+    
+    fanMaxAirFlowRate Double
+    fanRatedElectricPower Double
+    fanRatedPowerPerMaxAirFlowRate Double
+    fanMotorHeatInAirFraction Double
+    fanTotalEfficiency Double
+    
+    pumpsPowerPerWaterFlowRateCircPump Double
+    pumpsPowerPerWaterFlowRateHWCircPump Double
+    pumpsPowerPerWaterFlowRateCondCircPump Double
+    
+    pumpsHeadCircPump Double
+    pumpsHeadHwCircPump Double
+    pumpsHeadCondCircPump Double
+    
+    pumpsElectricPowerCircPump Double 
+    pumpsElectricPowerHwCircPump Double
+    pumpsElectricPowerCondCircPump Double
+    
+    pumpsMotorEfficiencyCircPump Double
+    pumpsMotorEfficiencyHwCircPump Double
+    pumpsMotorEfficiencyCondCircPump Double
+    
+    pumpsWaterFlowCircPump Double
+    pumpsWaterFlowHwCircPump Double
+    pumpsWaterFlowCondCircPump Double 
+}
+
+
+
+
+
+
+
+

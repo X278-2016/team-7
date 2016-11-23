@@ -1,0 +1,132 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "mPadSetName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "mLatitude",
+            "fieldType": "Double",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "mLongitude",
+            "fieldType": "Double",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "coolingCoilsNominalSensibleHeatRatio",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "coolingCoilsNominalTotalCapacity",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "heatingCoilsNominalTotalCapacityReheatCoilZone1",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "heatingCoilsNominalTotalCapacityReheatCoilZone2",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "heatingCoilsNominalTotalCapacityReheatCoilZone3",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "fanMaxAirFlowRate",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "fanRatedElectricPower",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "fanRatedPowerPerMaxAirFlowRate",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "fanMotorHeatInAirFraction",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "fanTotalEfficiency",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsPowerPerWaterFlowRateCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsPowerPerWaterFlowRateHwCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsPowerPerWaterFlowRateCondCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsHeadCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsHeadHwCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsHeadCondCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsElectricPowerCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsElectricPowerHwCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsElectricPowerCondCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsMotorEfficiencyCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsMotorEfficiencyHwCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsMotorEfficiencyCondCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsWaterFlowCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsWaterFlowHwCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsWaterFlowCondCircPump",
+            "fieldType": "Double"
+        }
+    ],
+    "changelogDate": "20161121080700",
+    "entityTableName": "padset",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

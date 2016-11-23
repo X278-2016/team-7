@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet author="aduba (generated)" id="1479714870584-1">
+        <addColumn tableName="padset">
+            <column name="cooling_coils_nominal_sensible_heat_ratio" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-2">
+        <addColumn tableName="padset">
+            <column name="cooling_coils_nominal_total_capacity" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-3">
+        <addColumn tableName="padset">
+            <column name="fan_max_air_flow_rate" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-4">
+        <addColumn tableName="padset">
+            <column name="fan_motor_heat_in_air_fraction" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-5">
+        <addColumn tableName="padset">
+            <column name="fan_rated_electric_power" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-6">
+        <addColumn tableName="padset">
+            <column name="fan_rated_power_per_max_air_flow_rate" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-7">
+        <addColumn tableName="padset">
+            <column name="fan_total_efficiency" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-8">
+        <addColumn tableName="padset">
+            <column name="heating_coils_nominal_total_capacity_reheat_coil_zone_1" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-9">
+        <addColumn tableName="padset">
+            <column name="heating_coils_nominal_total_capacity_reheat_coil_zone_2" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-10">
+        <addColumn tableName="padset">
+            <column name="heating_coils_nominal_total_capacity_reheat_coil_zone_3" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-11">
+        <addColumn tableName="padset">
+            <column name="pumps_electric_power_circ_pump" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-12">
+        <addColumn tableName="padset">
+            <column name="pumps_electric_power_cond_circ_pump" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-13">
+        <addColumn tableName="padset">
+            <column name="pumps_electric_power_hw_circ_pump" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-14">
+        <addColumn tableName="padset">
+            <column name="pumps_head_circ_pump" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-15">
+        <addColumn tableName="padset">
+            <column name="pumps_head_cond_circ_pump" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-16">
+        <addColumn tableName="padset">
+            <column name="pumps_head_hw_circ_pump" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-17">
+        <addColumn tableName="padset">
+            <column name="pumps_motor_efficiency_circ_pump" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-18">
+        <addColumn tableName="padset">
+            <column name="pumps_motor_efficiency_cond_circ_pump" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-19">
+        <addColumn tableName="padset">
+            <column name="pumps_motor_efficiency_hw_circ_pump" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-20">
+        <addColumn tableName="padset">
+            <column name="pumps_power_per_water_flow_rate_circ_pump" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-21">
+        <addColumn tableName="padset">
+            <column name="pumps_power_per_water_flow_rate_cond_circ_pump" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-22">
+        <addColumn tableName="padset">
+            <column name="pumps_power_per_water_flow_rate_hw_circ_pump" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-23">
+        <addColumn tableName="padset">
+            <column name="pumps_water_flow_circ_pump" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-24">
+        <addColumn tableName="padset">
+            <column name="pumps_water_flow_cond_circ_pump" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-25">
+        <addColumn tableName="padset">
+            <column name="pumps_water_flow_hw_circ_pump" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-26">
+        <dropDefaultValue columnDataType="timestamp" columnName="created_date" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="aduba (generated)" id="1479714870584-27">
+        <dropDefaultValue columnDataType="timestamp" columnName="last_modified_date" tableName="jhi_user"/>
+    </changeSet>
+</databaseChangeLog>
