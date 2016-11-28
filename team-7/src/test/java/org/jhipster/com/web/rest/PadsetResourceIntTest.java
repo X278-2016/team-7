@@ -51,77 +51,152 @@ public class PadsetResourceIntTest {
     private static final Double DEFAULT_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO = 1D;
     private static final Double UPDATED_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO = 2D;
 
+    private static final Double DEFAULT_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO_THRESHOLD = 1D;
+    private static final Double UPDATED_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO_THRESHOLD = 2D;
+
     private static final Double DEFAULT_COOLING_COILS_NOMINAL_TOTAL_CAPACITY = 1D;
     private static final Double UPDATED_COOLING_COILS_NOMINAL_TOTAL_CAPACITY = 2D;
+
+    private static final Double DEFAULT_COOLING_COILS_NOMINAL_TOTAL_CAPACITY_THRESHOLD = 1D;
+    private static final Double UPDATED_COOLING_COILS_NOMINAL_TOTAL_CAPACITY_THRESHOLD = 2D;
 
     private static final Double DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1 = 1D;
     private static final Double UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1 = 2D;
 
+    private static final Double DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1_THRESHOLD = 1D;
+    private static final Double UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1_THRESHOLD = 2D;
+
     private static final Double DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2 = 1D;
     private static final Double UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2 = 2D;
+
+    private static final Double DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2_THRESHOLD = 1D;
+    private static final Double UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2_THRESHOLD = 2D;
 
     private static final Double DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3 = 1D;
     private static final Double UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3 = 2D;
 
+    private static final Double DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3_THRESHOLD = 1D;
+    private static final Double UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3_THRESHOLD = 2D;
+
     private static final Double DEFAULT_FAN_MAX_AIR_FLOW_RATE = 1D;
     private static final Double UPDATED_FAN_MAX_AIR_FLOW_RATE = 2D;
+
+    private static final Double DEFAULT_FAN_MAX_AIR_FLOW_RATE_THRESHOLD = 1D;
+    private static final Double UPDATED_FAN_MAX_AIR_FLOW_RATE_THRESHOLD = 2D;
 
     private static final Double DEFAULT_FAN_RATED_ELECTRIC_POWER = 1D;
     private static final Double UPDATED_FAN_RATED_ELECTRIC_POWER = 2D;
 
+    private static final Double DEFAULT_FAN_RATED_ELECTRIC_POWER_THRESHOLD = 1D;
+    private static final Double UPDATED_FAN_RATED_ELECTRIC_POWER_THRESHOLD = 2D;
+
     private static final Double DEFAULT_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE = 1D;
     private static final Double UPDATED_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE = 2D;
+
+    private static final Double DEFAULT_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE_THRESHOLD = 1D;
+    private static final Double UPDATED_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE_THRESHOLD = 2D;
 
     private static final Double DEFAULT_FAN_MOTOR_HEAT_IN_AIR_FRACTION = 1D;
     private static final Double UPDATED_FAN_MOTOR_HEAT_IN_AIR_FRACTION = 2D;
 
+    private static final Double DEFAULT_FAN_MOTOR_HEAT_IN_AIR_FRACTION_THRESHOLD = 1D;
+    private static final Double UPDATED_FAN_MOTOR_HEAT_IN_AIR_FRACTION_THRESHOLD = 2D;
+
     private static final Double DEFAULT_FAN_TOTAL_EFFICIENCY = 1D;
     private static final Double UPDATED_FAN_TOTAL_EFFICIENCY = 2D;
+
+    private static final Double DEFAULT_FAN_TOTAL_EFFICIENCY_THRESHOLD = 1D;
+    private static final Double UPDATED_FAN_TOTAL_EFFICIENCY_THRESHOLD = 2D;
 
     private static final Double DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP = 1D;
     private static final Double UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP = 2D;
 
+    private static final Double DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP_THRESHOLD = 1D;
+    private static final Double UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP_THRESHOLD = 2D;
+
     private static final Double DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP = 1D;
     private static final Double UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP = 2D;
+
+    private static final Double DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP_THRESHOLD = 1D;
+    private static final Double UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP_THRESHOLD = 2D;
 
     private static final Double DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP = 1D;
     private static final Double UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP = 2D;
 
+    private static final Double DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP_THRESHOLD = 1D;
+    private static final Double UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP_THRESHOLD = 2D;
+
     private static final Double DEFAULT_PUMPS_HEAD_CIRC_PUMP = 1D;
     private static final Double UPDATED_PUMPS_HEAD_CIRC_PUMP = 2D;
+
+    private static final Double DEFAULT_PUMPS_HEAD_CIRC_PUMP_THRESHOLD = 1D;
+    private static final Double UPDATED_PUMPS_HEAD_CIRC_PUMP_THRESHOLD = 2D;
 
     private static final Double DEFAULT_PUMPS_HEAD_HW_CIRC_PUMP = 1D;
     private static final Double UPDATED_PUMPS_HEAD_HW_CIRC_PUMP = 2D;
 
+    private static final Double DEFAULT_PUMPS_HEAD_HW_CIRC_PUMP_THRESHOLD = 1D;
+    private static final Double UPDATED_PUMPS_HEAD_HW_CIRC_PUMP_THRESHOLD = 2D;
+
     private static final Double DEFAULT_PUMPS_HEAD_COND_CIRC_PUMP = 1D;
     private static final Double UPDATED_PUMPS_HEAD_COND_CIRC_PUMP = 2D;
+
+    private static final Double DEFAULT_PUMPS_HEAD_COND_CIRC_PUMP_THRESHOLD = 1D;
+    private static final Double UPDATED_PUMPS_HEAD_COND_CIRC_PUMP_THRESHOLD = 2D;
 
     private static final Double DEFAULT_PUMPS_ELECTRIC_POWER_CIRC_PUMP = 1D;
     private static final Double UPDATED_PUMPS_ELECTRIC_POWER_CIRC_PUMP = 2D;
 
+    private static final Double DEFAULT_PUMPS_ELECTRIC_POWER_CIRC_PUMP_THRESHOLD = 1D;
+    private static final Double UPDATED_PUMPS_ELECTRIC_POWER_CIRC_PUMP_THRESHOLD = 2D;
+
     private static final Double DEFAULT_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP = 1D;
     private static final Double UPDATED_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP = 2D;
+
+    private static final Double DEFAULT_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP_THRESHOLD = 1D;
+    private static final Double UPDATED_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP_THRESHOLD = 2D;
 
     private static final Double DEFAULT_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP = 1D;
     private static final Double UPDATED_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP = 2D;
 
+    private static final Double DEFAULT_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP_THRESHOLD = 1D;
+    private static final Double UPDATED_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP_THRESHOLD = 2D;
+
     private static final Double DEFAULT_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP = 1D;
     private static final Double UPDATED_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP = 2D;
+
+    private static final Double DEFAULT_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP_THRESHOLD = 1D;
+    private static final Double UPDATED_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP_THRESHOLD = 2D;
 
     private static final Double DEFAULT_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP = 1D;
     private static final Double UPDATED_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP = 2D;
 
+    private static final Double DEFAULT_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP_THRESHOLD = 1D;
+    private static final Double UPDATED_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP_THRESHOLD = 2D;
+
     private static final Double DEFAULT_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP = 1D;
     private static final Double UPDATED_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP = 2D;
+
+    private static final Double DEFAULT_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP_THRESHOLD = 1D;
+    private static final Double UPDATED_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP_THRESHOLD = 2D;
 
     private static final Double DEFAULT_PUMPS_WATER_FLOW_CIRC_PUMP = 1D;
     private static final Double UPDATED_PUMPS_WATER_FLOW_CIRC_PUMP = 2D;
 
+    private static final Double DEFAULT_PUMPS_WATER_FLOW_CIRC_PUMP_THRESHOLD = 1D;
+    private static final Double UPDATED_PUMPS_WATER_FLOW_CIRC_PUMP_THRESHOLD = 2D;
+
     private static final Double DEFAULT_PUMPS_WATER_FLOW_HW_CIRC_PUMP = 1D;
     private static final Double UPDATED_PUMPS_WATER_FLOW_HW_CIRC_PUMP = 2D;
 
+    private static final Double DEFAULT_PUMPS_WATER_FLOW_HW_CIRC_PUMP_THRESHOLD = 1D;
+    private static final Double UPDATED_PUMPS_WATER_FLOW_HW_CIRC_PUMP_THRESHOLD = 2D;
+
     private static final Double DEFAULT_PUMPS_WATER_FLOW_COND_CIRC_PUMP = 1D;
     private static final Double UPDATED_PUMPS_WATER_FLOW_COND_CIRC_PUMP = 2D;
+
+    private static final Double DEFAULT_PUMPS_WATER_FLOW_COND_CIRC_PUMP_THRESHOLD = 1D;
+    private static final Double UPDATED_PUMPS_WATER_FLOW_COND_CIRC_PUMP_THRESHOLD = 2D;
 
     @Inject
     private PadsetRepository padsetRepository;
@@ -165,30 +240,55 @@ public class PadsetResourceIntTest {
                 .mLatitude(DEFAULT_M_LATITUDE)
                 .mLongitude(DEFAULT_M_LONGITUDE)
                 .coolingCoilsNominalSensibleHeatRatio(DEFAULT_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO)
+                .coolingCoilsNominalSensibleHeatRatioThreshold(DEFAULT_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO_THRESHOLD)
                 .coolingCoilsNominalTotalCapacity(DEFAULT_COOLING_COILS_NOMINAL_TOTAL_CAPACITY)
+                .coolingCoilsNominalTotalCapacityThreshold(DEFAULT_COOLING_COILS_NOMINAL_TOTAL_CAPACITY_THRESHOLD)
                 .heatingCoilsNominalTotalCapacityReheatCoilZone1(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1)
+                .heatingCoilsNominalTotalCapacityReheatCoilZone1Threshold(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1_THRESHOLD)
                 .heatingCoilsNominalTotalCapacityReheatCoilZone2(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2)
+                .heatingCoilsNominalTotalCapacityReheatCoilZone2Threshold(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2_THRESHOLD)
                 .heatingCoilsNominalTotalCapacityReheatCoilZone3(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3)
+                .heatingCoilsNominalTotalCapacityReheatCoilZone3Threshold(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3_THRESHOLD)
                 .fanMaxAirFlowRate(DEFAULT_FAN_MAX_AIR_FLOW_RATE)
+                .fanMaxAirFlowRateThreshold(DEFAULT_FAN_MAX_AIR_FLOW_RATE_THRESHOLD)
                 .fanRatedElectricPower(DEFAULT_FAN_RATED_ELECTRIC_POWER)
+                .fanRatedElectricPowerThreshold(DEFAULT_FAN_RATED_ELECTRIC_POWER_THRESHOLD)
                 .fanRatedPowerPerMaxAirFlowRate(DEFAULT_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE)
+                .fanRatedPowerPerMaxAirFlowRateThreshold(DEFAULT_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE_THRESHOLD)
                 .fanMotorHeatInAirFraction(DEFAULT_FAN_MOTOR_HEAT_IN_AIR_FRACTION)
+                .fanMotorHeatInAirFractionThreshold(DEFAULT_FAN_MOTOR_HEAT_IN_AIR_FRACTION_THRESHOLD)
                 .fanTotalEfficiency(DEFAULT_FAN_TOTAL_EFFICIENCY)
+                .fanTotalEfficiencyThreshold(DEFAULT_FAN_TOTAL_EFFICIENCY_THRESHOLD)
                 .pumpsPowerPerWaterFlowRateCircPump(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP)
+                .pumpsPowerPerWaterFlowRateCircPumpThreshold(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP_THRESHOLD)
                 .pumpsPowerPerWaterFlowRateHwCircPump(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP)
+                .pumpsPowerPerWaterFlowRateHwCircPumpThreshold(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP_THRESHOLD)
                 .pumpsPowerPerWaterFlowRateCondCircPump(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP)
+                .pumpsPowerPerWaterFlowRateCondCircPumpThreshold(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP_THRESHOLD)
                 .pumpsHeadCircPump(DEFAULT_PUMPS_HEAD_CIRC_PUMP)
+                .pumpsHeadCircPumpThreshold(DEFAULT_PUMPS_HEAD_CIRC_PUMP_THRESHOLD)
                 .pumpsHeadHwCircPump(DEFAULT_PUMPS_HEAD_HW_CIRC_PUMP)
+                .pumpsHeadHwCircPumpThreshold(DEFAULT_PUMPS_HEAD_HW_CIRC_PUMP_THRESHOLD)
                 .pumpsHeadCondCircPump(DEFAULT_PUMPS_HEAD_COND_CIRC_PUMP)
+                .pumpsHeadCondCircPumpThreshold(DEFAULT_PUMPS_HEAD_COND_CIRC_PUMP_THRESHOLD)
                 .pumpsElectricPowerCircPump(DEFAULT_PUMPS_ELECTRIC_POWER_CIRC_PUMP)
+                .pumpsElectricPowerCircPumpThreshold(DEFAULT_PUMPS_ELECTRIC_POWER_CIRC_PUMP_THRESHOLD)
                 .pumpsElectricPowerHwCircPump(DEFAULT_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP)
+                .pumpsElectricPowerHwCircPumpThreshold(DEFAULT_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP_THRESHOLD)
                 .pumpsElectricPowerCondCircPump(DEFAULT_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP)
+                .pumpsElectricPowerCondCircPumpThreshold(DEFAULT_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP_THRESHOLD)
                 .pumpsMotorEfficiencyCircPump(DEFAULT_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP)
+                .pumpsMotorEfficiencyCircPumpThreshold(DEFAULT_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP_THRESHOLD)
                 .pumpsMotorEfficiencyHwCircPump(DEFAULT_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP)
+                .pumpsMotorEfficiencyHwCircPumpThreshold(DEFAULT_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP_THRESHOLD)
                 .pumpsMotorEfficiencyCondCircPump(DEFAULT_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP)
+                .pumpsMotorEfficiencyCondCircPumpThreshold(DEFAULT_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP_THRESHOLD)
                 .pumpsWaterFlowCircPump(DEFAULT_PUMPS_WATER_FLOW_CIRC_PUMP)
+                .pumpsWaterFlowCircPumpThreshold(DEFAULT_PUMPS_WATER_FLOW_CIRC_PUMP_THRESHOLD)
                 .pumpsWaterFlowHwCircPump(DEFAULT_PUMPS_WATER_FLOW_HW_CIRC_PUMP)
-                .pumpsWaterFlowCondCircPump(DEFAULT_PUMPS_WATER_FLOW_COND_CIRC_PUMP);
+                .pumpsWaterFlowHwCircPumpThreshold(DEFAULT_PUMPS_WATER_FLOW_HW_CIRC_PUMP_THRESHOLD)
+                .pumpsWaterFlowCondCircPump(DEFAULT_PUMPS_WATER_FLOW_COND_CIRC_PUMP)
+                .pumpsWaterFlowCondCircPumpThreshold(DEFAULT_PUMPS_WATER_FLOW_COND_CIRC_PUMP_THRESHOLD);
         return padset;
     }
 
@@ -218,30 +318,55 @@ public class PadsetResourceIntTest {
         assertThat(testPadset.getmLatitude()).isEqualTo(DEFAULT_M_LATITUDE);
         assertThat(testPadset.getmLongitude()).isEqualTo(DEFAULT_M_LONGITUDE);
         assertThat(testPadset.getCoolingCoilsNominalSensibleHeatRatio()).isEqualTo(DEFAULT_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO);
+        assertThat(testPadset.getCoolingCoilsNominalSensibleHeatRatioThreshold()).isEqualTo(DEFAULT_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO_THRESHOLD);
         assertThat(testPadset.getCoolingCoilsNominalTotalCapacity()).isEqualTo(DEFAULT_COOLING_COILS_NOMINAL_TOTAL_CAPACITY);
+        assertThat(testPadset.getCoolingCoilsNominalTotalCapacityThreshold()).isEqualTo(DEFAULT_COOLING_COILS_NOMINAL_TOTAL_CAPACITY_THRESHOLD);
         assertThat(testPadset.getHeatingCoilsNominalTotalCapacityReheatCoilZone1()).isEqualTo(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1);
+        assertThat(testPadset.getHeatingCoilsNominalTotalCapacityReheatCoilZone1Threshold()).isEqualTo(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1_THRESHOLD);
         assertThat(testPadset.getHeatingCoilsNominalTotalCapacityReheatCoilZone2()).isEqualTo(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2);
+        assertThat(testPadset.getHeatingCoilsNominalTotalCapacityReheatCoilZone2Threshold()).isEqualTo(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2_THRESHOLD);
         assertThat(testPadset.getHeatingCoilsNominalTotalCapacityReheatCoilZone3()).isEqualTo(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3);
+        assertThat(testPadset.getHeatingCoilsNominalTotalCapacityReheatCoilZone3Threshold()).isEqualTo(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3_THRESHOLD);
         assertThat(testPadset.getFanMaxAirFlowRate()).isEqualTo(DEFAULT_FAN_MAX_AIR_FLOW_RATE);
+        assertThat(testPadset.getFanMaxAirFlowRateThreshold()).isEqualTo(DEFAULT_FAN_MAX_AIR_FLOW_RATE_THRESHOLD);
         assertThat(testPadset.getFanRatedElectricPower()).isEqualTo(DEFAULT_FAN_RATED_ELECTRIC_POWER);
+        assertThat(testPadset.getFanRatedElectricPowerThreshold()).isEqualTo(DEFAULT_FAN_RATED_ELECTRIC_POWER_THRESHOLD);
         assertThat(testPadset.getFanRatedPowerPerMaxAirFlowRate()).isEqualTo(DEFAULT_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE);
+        assertThat(testPadset.getFanRatedPowerPerMaxAirFlowRateThreshold()).isEqualTo(DEFAULT_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE_THRESHOLD);
         assertThat(testPadset.getFanMotorHeatInAirFraction()).isEqualTo(DEFAULT_FAN_MOTOR_HEAT_IN_AIR_FRACTION);
+        assertThat(testPadset.getFanMotorHeatInAirFractionThreshold()).isEqualTo(DEFAULT_FAN_MOTOR_HEAT_IN_AIR_FRACTION_THRESHOLD);
         assertThat(testPadset.getFanTotalEfficiency()).isEqualTo(DEFAULT_FAN_TOTAL_EFFICIENCY);
+        assertThat(testPadset.getFanTotalEfficiencyThreshold()).isEqualTo(DEFAULT_FAN_TOTAL_EFFICIENCY_THRESHOLD);
         assertThat(testPadset.getPumpsPowerPerWaterFlowRateCircPump()).isEqualTo(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP);
+        assertThat(testPadset.getPumpsPowerPerWaterFlowRateCircPumpThreshold()).isEqualTo(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsPowerPerWaterFlowRateHwCircPump()).isEqualTo(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP);
+        assertThat(testPadset.getPumpsPowerPerWaterFlowRateHwCircPumpThreshold()).isEqualTo(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsPowerPerWaterFlowRateCondCircPump()).isEqualTo(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP);
+        assertThat(testPadset.getPumpsPowerPerWaterFlowRateCondCircPumpThreshold()).isEqualTo(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsHeadCircPump()).isEqualTo(DEFAULT_PUMPS_HEAD_CIRC_PUMP);
+        assertThat(testPadset.getPumpsHeadCircPumpThreshold()).isEqualTo(DEFAULT_PUMPS_HEAD_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsHeadHwCircPump()).isEqualTo(DEFAULT_PUMPS_HEAD_HW_CIRC_PUMP);
+        assertThat(testPadset.getPumpsHeadHwCircPumpThreshold()).isEqualTo(DEFAULT_PUMPS_HEAD_HW_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsHeadCondCircPump()).isEqualTo(DEFAULT_PUMPS_HEAD_COND_CIRC_PUMP);
+        assertThat(testPadset.getPumpsHeadCondCircPumpThreshold()).isEqualTo(DEFAULT_PUMPS_HEAD_COND_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsElectricPowerCircPump()).isEqualTo(DEFAULT_PUMPS_ELECTRIC_POWER_CIRC_PUMP);
+        assertThat(testPadset.getPumpsElectricPowerCircPumpThreshold()).isEqualTo(DEFAULT_PUMPS_ELECTRIC_POWER_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsElectricPowerHwCircPump()).isEqualTo(DEFAULT_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP);
+        assertThat(testPadset.getPumpsElectricPowerHwCircPumpThreshold()).isEqualTo(DEFAULT_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsElectricPowerCondCircPump()).isEqualTo(DEFAULT_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP);
+        assertThat(testPadset.getPumpsElectricPowerCondCircPumpThreshold()).isEqualTo(DEFAULT_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsMotorEfficiencyCircPump()).isEqualTo(DEFAULT_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP);
+        assertThat(testPadset.getPumpsMotorEfficiencyCircPumpThreshold()).isEqualTo(DEFAULT_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsMotorEfficiencyHwCircPump()).isEqualTo(DEFAULT_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP);
+        assertThat(testPadset.getPumpsMotorEfficiencyHwCircPumpThreshold()).isEqualTo(DEFAULT_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsMotorEfficiencyCondCircPump()).isEqualTo(DEFAULT_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP);
+        assertThat(testPadset.getPumpsMotorEfficiencyCondCircPumpThreshold()).isEqualTo(DEFAULT_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsWaterFlowCircPump()).isEqualTo(DEFAULT_PUMPS_WATER_FLOW_CIRC_PUMP);
+        assertThat(testPadset.getPumpsWaterFlowCircPumpThreshold()).isEqualTo(DEFAULT_PUMPS_WATER_FLOW_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsWaterFlowHwCircPump()).isEqualTo(DEFAULT_PUMPS_WATER_FLOW_HW_CIRC_PUMP);
+        assertThat(testPadset.getPumpsWaterFlowHwCircPumpThreshold()).isEqualTo(DEFAULT_PUMPS_WATER_FLOW_HW_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsWaterFlowCondCircPump()).isEqualTo(DEFAULT_PUMPS_WATER_FLOW_COND_CIRC_PUMP);
+        assertThat(testPadset.getPumpsWaterFlowCondCircPumpThreshold()).isEqualTo(DEFAULT_PUMPS_WATER_FLOW_COND_CIRC_PUMP_THRESHOLD);
 
         // Validate the Padset in ElasticSearch
         Padset padsetEs = padsetSearchRepository.findOne(testPadset.getId());
@@ -317,30 +442,55 @@ public class PadsetResourceIntTest {
                 .andExpect(jsonPath("$.[*].mLatitude").value(hasItem(DEFAULT_M_LATITUDE.doubleValue())))
                 .andExpect(jsonPath("$.[*].mLongitude").value(hasItem(DEFAULT_M_LONGITUDE.doubleValue())))
                 .andExpect(jsonPath("$.[*].coolingCoilsNominalSensibleHeatRatio").value(hasItem(DEFAULT_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO.doubleValue())))
+                .andExpect(jsonPath("$.[*].coolingCoilsNominalSensibleHeatRatioThreshold").value(hasItem(DEFAULT_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].coolingCoilsNominalTotalCapacity").value(hasItem(DEFAULT_COOLING_COILS_NOMINAL_TOTAL_CAPACITY.doubleValue())))
+                .andExpect(jsonPath("$.[*].coolingCoilsNominalTotalCapacityThreshold").value(hasItem(DEFAULT_COOLING_COILS_NOMINAL_TOTAL_CAPACITY_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].heatingCoilsNominalTotalCapacityReheatCoilZone1").value(hasItem(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1.doubleValue())))
+                .andExpect(jsonPath("$.[*].heatingCoilsNominalTotalCapacityReheatCoilZone1Threshold").value(hasItem(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].heatingCoilsNominalTotalCapacityReheatCoilZone2").value(hasItem(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2.doubleValue())))
+                .andExpect(jsonPath("$.[*].heatingCoilsNominalTotalCapacityReheatCoilZone2Threshold").value(hasItem(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].heatingCoilsNominalTotalCapacityReheatCoilZone3").value(hasItem(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3.doubleValue())))
+                .andExpect(jsonPath("$.[*].heatingCoilsNominalTotalCapacityReheatCoilZone3Threshold").value(hasItem(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].fanMaxAirFlowRate").value(hasItem(DEFAULT_FAN_MAX_AIR_FLOW_RATE.doubleValue())))
+                .andExpect(jsonPath("$.[*].fanMaxAirFlowRateThreshold").value(hasItem(DEFAULT_FAN_MAX_AIR_FLOW_RATE_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].fanRatedElectricPower").value(hasItem(DEFAULT_FAN_RATED_ELECTRIC_POWER.doubleValue())))
+                .andExpect(jsonPath("$.[*].fanRatedElectricPowerThreshold").value(hasItem(DEFAULT_FAN_RATED_ELECTRIC_POWER_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].fanRatedPowerPerMaxAirFlowRate").value(hasItem(DEFAULT_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE.doubleValue())))
+                .andExpect(jsonPath("$.[*].fanRatedPowerPerMaxAirFlowRateThreshold").value(hasItem(DEFAULT_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].fanMotorHeatInAirFraction").value(hasItem(DEFAULT_FAN_MOTOR_HEAT_IN_AIR_FRACTION.doubleValue())))
+                .andExpect(jsonPath("$.[*].fanMotorHeatInAirFractionThreshold").value(hasItem(DEFAULT_FAN_MOTOR_HEAT_IN_AIR_FRACTION_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].fanTotalEfficiency").value(hasItem(DEFAULT_FAN_TOTAL_EFFICIENCY.doubleValue())))
+                .andExpect(jsonPath("$.[*].fanTotalEfficiencyThreshold").value(hasItem(DEFAULT_FAN_TOTAL_EFFICIENCY_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].pumpsPowerPerWaterFlowRateCircPump").value(hasItem(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP.doubleValue())))
+                .andExpect(jsonPath("$.[*].pumpsPowerPerWaterFlowRateCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].pumpsPowerPerWaterFlowRateHwCircPump").value(hasItem(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP.doubleValue())))
+                .andExpect(jsonPath("$.[*].pumpsPowerPerWaterFlowRateHwCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].pumpsPowerPerWaterFlowRateCondCircPump").value(hasItem(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP.doubleValue())))
+                .andExpect(jsonPath("$.[*].pumpsPowerPerWaterFlowRateCondCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].pumpsHeadCircPump").value(hasItem(DEFAULT_PUMPS_HEAD_CIRC_PUMP.doubleValue())))
+                .andExpect(jsonPath("$.[*].pumpsHeadCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_HEAD_CIRC_PUMP_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].pumpsHeadHwCircPump").value(hasItem(DEFAULT_PUMPS_HEAD_HW_CIRC_PUMP.doubleValue())))
+                .andExpect(jsonPath("$.[*].pumpsHeadHwCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_HEAD_HW_CIRC_PUMP_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].pumpsHeadCondCircPump").value(hasItem(DEFAULT_PUMPS_HEAD_COND_CIRC_PUMP.doubleValue())))
+                .andExpect(jsonPath("$.[*].pumpsHeadCondCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_HEAD_COND_CIRC_PUMP_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].pumpsElectricPowerCircPump").value(hasItem(DEFAULT_PUMPS_ELECTRIC_POWER_CIRC_PUMP.doubleValue())))
+                .andExpect(jsonPath("$.[*].pumpsElectricPowerCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_ELECTRIC_POWER_CIRC_PUMP_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].pumpsElectricPowerHwCircPump").value(hasItem(DEFAULT_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP.doubleValue())))
+                .andExpect(jsonPath("$.[*].pumpsElectricPowerHwCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].pumpsElectricPowerCondCircPump").value(hasItem(DEFAULT_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP.doubleValue())))
+                .andExpect(jsonPath("$.[*].pumpsElectricPowerCondCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].pumpsMotorEfficiencyCircPump").value(hasItem(DEFAULT_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP.doubleValue())))
+                .andExpect(jsonPath("$.[*].pumpsMotorEfficiencyCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].pumpsMotorEfficiencyHwCircPump").value(hasItem(DEFAULT_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP.doubleValue())))
+                .andExpect(jsonPath("$.[*].pumpsMotorEfficiencyHwCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].pumpsMotorEfficiencyCondCircPump").value(hasItem(DEFAULT_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP.doubleValue())))
+                .andExpect(jsonPath("$.[*].pumpsMotorEfficiencyCondCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].pumpsWaterFlowCircPump").value(hasItem(DEFAULT_PUMPS_WATER_FLOW_CIRC_PUMP.doubleValue())))
+                .andExpect(jsonPath("$.[*].pumpsWaterFlowCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_WATER_FLOW_CIRC_PUMP_THRESHOLD.doubleValue())))
                 .andExpect(jsonPath("$.[*].pumpsWaterFlowHwCircPump").value(hasItem(DEFAULT_PUMPS_WATER_FLOW_HW_CIRC_PUMP.doubleValue())))
-                .andExpect(jsonPath("$.[*].pumpsWaterFlowCondCircPump").value(hasItem(DEFAULT_PUMPS_WATER_FLOW_COND_CIRC_PUMP.doubleValue())));
+                .andExpect(jsonPath("$.[*].pumpsWaterFlowHwCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_WATER_FLOW_HW_CIRC_PUMP_THRESHOLD.doubleValue())))
+                .andExpect(jsonPath("$.[*].pumpsWaterFlowCondCircPump").value(hasItem(DEFAULT_PUMPS_WATER_FLOW_COND_CIRC_PUMP.doubleValue())))
+                .andExpect(jsonPath("$.[*].pumpsWaterFlowCondCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_WATER_FLOW_COND_CIRC_PUMP_THRESHOLD.doubleValue())));
     }
 
     @Test
@@ -358,30 +508,55 @@ public class PadsetResourceIntTest {
             .andExpect(jsonPath("$.mLatitude").value(DEFAULT_M_LATITUDE.doubleValue()))
             .andExpect(jsonPath("$.mLongitude").value(DEFAULT_M_LONGITUDE.doubleValue()))
             .andExpect(jsonPath("$.coolingCoilsNominalSensibleHeatRatio").value(DEFAULT_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO.doubleValue()))
+            .andExpect(jsonPath("$.coolingCoilsNominalSensibleHeatRatioThreshold").value(DEFAULT_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.coolingCoilsNominalTotalCapacity").value(DEFAULT_COOLING_COILS_NOMINAL_TOTAL_CAPACITY.doubleValue()))
+            .andExpect(jsonPath("$.coolingCoilsNominalTotalCapacityThreshold").value(DEFAULT_COOLING_COILS_NOMINAL_TOTAL_CAPACITY_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.heatingCoilsNominalTotalCapacityReheatCoilZone1").value(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1.doubleValue()))
+            .andExpect(jsonPath("$.heatingCoilsNominalTotalCapacityReheatCoilZone1Threshold").value(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.heatingCoilsNominalTotalCapacityReheatCoilZone2").value(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2.doubleValue()))
+            .andExpect(jsonPath("$.heatingCoilsNominalTotalCapacityReheatCoilZone2Threshold").value(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.heatingCoilsNominalTotalCapacityReheatCoilZone3").value(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3.doubleValue()))
+            .andExpect(jsonPath("$.heatingCoilsNominalTotalCapacityReheatCoilZone3Threshold").value(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.fanMaxAirFlowRate").value(DEFAULT_FAN_MAX_AIR_FLOW_RATE.doubleValue()))
+            .andExpect(jsonPath("$.fanMaxAirFlowRateThreshold").value(DEFAULT_FAN_MAX_AIR_FLOW_RATE_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.fanRatedElectricPower").value(DEFAULT_FAN_RATED_ELECTRIC_POWER.doubleValue()))
+            .andExpect(jsonPath("$.fanRatedElectricPowerThreshold").value(DEFAULT_FAN_RATED_ELECTRIC_POWER_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.fanRatedPowerPerMaxAirFlowRate").value(DEFAULT_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE.doubleValue()))
+            .andExpect(jsonPath("$.fanRatedPowerPerMaxAirFlowRateThreshold").value(DEFAULT_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.fanMotorHeatInAirFraction").value(DEFAULT_FAN_MOTOR_HEAT_IN_AIR_FRACTION.doubleValue()))
+            .andExpect(jsonPath("$.fanMotorHeatInAirFractionThreshold").value(DEFAULT_FAN_MOTOR_HEAT_IN_AIR_FRACTION_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.fanTotalEfficiency").value(DEFAULT_FAN_TOTAL_EFFICIENCY.doubleValue()))
+            .andExpect(jsonPath("$.fanTotalEfficiencyThreshold").value(DEFAULT_FAN_TOTAL_EFFICIENCY_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.pumpsPowerPerWaterFlowRateCircPump").value(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP.doubleValue()))
+            .andExpect(jsonPath("$.pumpsPowerPerWaterFlowRateCircPumpThreshold").value(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.pumpsPowerPerWaterFlowRateHwCircPump").value(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP.doubleValue()))
+            .andExpect(jsonPath("$.pumpsPowerPerWaterFlowRateHwCircPumpThreshold").value(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.pumpsPowerPerWaterFlowRateCondCircPump").value(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP.doubleValue()))
+            .andExpect(jsonPath("$.pumpsPowerPerWaterFlowRateCondCircPumpThreshold").value(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.pumpsHeadCircPump").value(DEFAULT_PUMPS_HEAD_CIRC_PUMP.doubleValue()))
+            .andExpect(jsonPath("$.pumpsHeadCircPumpThreshold").value(DEFAULT_PUMPS_HEAD_CIRC_PUMP_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.pumpsHeadHwCircPump").value(DEFAULT_PUMPS_HEAD_HW_CIRC_PUMP.doubleValue()))
+            .andExpect(jsonPath("$.pumpsHeadHwCircPumpThreshold").value(DEFAULT_PUMPS_HEAD_HW_CIRC_PUMP_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.pumpsHeadCondCircPump").value(DEFAULT_PUMPS_HEAD_COND_CIRC_PUMP.doubleValue()))
+            .andExpect(jsonPath("$.pumpsHeadCondCircPumpThreshold").value(DEFAULT_PUMPS_HEAD_COND_CIRC_PUMP_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.pumpsElectricPowerCircPump").value(DEFAULT_PUMPS_ELECTRIC_POWER_CIRC_PUMP.doubleValue()))
+            .andExpect(jsonPath("$.pumpsElectricPowerCircPumpThreshold").value(DEFAULT_PUMPS_ELECTRIC_POWER_CIRC_PUMP_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.pumpsElectricPowerHwCircPump").value(DEFAULT_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP.doubleValue()))
+            .andExpect(jsonPath("$.pumpsElectricPowerHwCircPumpThreshold").value(DEFAULT_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.pumpsElectricPowerCondCircPump").value(DEFAULT_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP.doubleValue()))
+            .andExpect(jsonPath("$.pumpsElectricPowerCondCircPumpThreshold").value(DEFAULT_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.pumpsMotorEfficiencyCircPump").value(DEFAULT_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP.doubleValue()))
+            .andExpect(jsonPath("$.pumpsMotorEfficiencyCircPumpThreshold").value(DEFAULT_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.pumpsMotorEfficiencyHwCircPump").value(DEFAULT_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP.doubleValue()))
+            .andExpect(jsonPath("$.pumpsMotorEfficiencyHwCircPumpThreshold").value(DEFAULT_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.pumpsMotorEfficiencyCondCircPump").value(DEFAULT_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP.doubleValue()))
+            .andExpect(jsonPath("$.pumpsMotorEfficiencyCondCircPumpThreshold").value(DEFAULT_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.pumpsWaterFlowCircPump").value(DEFAULT_PUMPS_WATER_FLOW_CIRC_PUMP.doubleValue()))
+            .andExpect(jsonPath("$.pumpsWaterFlowCircPumpThreshold").value(DEFAULT_PUMPS_WATER_FLOW_CIRC_PUMP_THRESHOLD.doubleValue()))
             .andExpect(jsonPath("$.pumpsWaterFlowHwCircPump").value(DEFAULT_PUMPS_WATER_FLOW_HW_CIRC_PUMP.doubleValue()))
-            .andExpect(jsonPath("$.pumpsWaterFlowCondCircPump").value(DEFAULT_PUMPS_WATER_FLOW_COND_CIRC_PUMP.doubleValue()));
+            .andExpect(jsonPath("$.pumpsWaterFlowHwCircPumpThreshold").value(DEFAULT_PUMPS_WATER_FLOW_HW_CIRC_PUMP_THRESHOLD.doubleValue()))
+            .andExpect(jsonPath("$.pumpsWaterFlowCondCircPump").value(DEFAULT_PUMPS_WATER_FLOW_COND_CIRC_PUMP.doubleValue()))
+            .andExpect(jsonPath("$.pumpsWaterFlowCondCircPumpThreshold").value(DEFAULT_PUMPS_WATER_FLOW_COND_CIRC_PUMP_THRESHOLD.doubleValue()));
     }
 
     @Test
@@ -407,30 +582,55 @@ public class PadsetResourceIntTest {
                 .mLatitude(UPDATED_M_LATITUDE)
                 .mLongitude(UPDATED_M_LONGITUDE)
                 .coolingCoilsNominalSensibleHeatRatio(UPDATED_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO)
+                .coolingCoilsNominalSensibleHeatRatioThreshold(UPDATED_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO_THRESHOLD)
                 .coolingCoilsNominalTotalCapacity(UPDATED_COOLING_COILS_NOMINAL_TOTAL_CAPACITY)
+                .coolingCoilsNominalTotalCapacityThreshold(UPDATED_COOLING_COILS_NOMINAL_TOTAL_CAPACITY_THRESHOLD)
                 .heatingCoilsNominalTotalCapacityReheatCoilZone1(UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1)
+                .heatingCoilsNominalTotalCapacityReheatCoilZone1Threshold(UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1_THRESHOLD)
                 .heatingCoilsNominalTotalCapacityReheatCoilZone2(UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2)
+                .heatingCoilsNominalTotalCapacityReheatCoilZone2Threshold(UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2_THRESHOLD)
                 .heatingCoilsNominalTotalCapacityReheatCoilZone3(UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3)
+                .heatingCoilsNominalTotalCapacityReheatCoilZone3Threshold(UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3_THRESHOLD)
                 .fanMaxAirFlowRate(UPDATED_FAN_MAX_AIR_FLOW_RATE)
+                .fanMaxAirFlowRateThreshold(UPDATED_FAN_MAX_AIR_FLOW_RATE_THRESHOLD)
                 .fanRatedElectricPower(UPDATED_FAN_RATED_ELECTRIC_POWER)
+                .fanRatedElectricPowerThreshold(UPDATED_FAN_RATED_ELECTRIC_POWER_THRESHOLD)
                 .fanRatedPowerPerMaxAirFlowRate(UPDATED_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE)
+                .fanRatedPowerPerMaxAirFlowRateThreshold(UPDATED_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE_THRESHOLD)
                 .fanMotorHeatInAirFraction(UPDATED_FAN_MOTOR_HEAT_IN_AIR_FRACTION)
+                .fanMotorHeatInAirFractionThreshold(UPDATED_FAN_MOTOR_HEAT_IN_AIR_FRACTION_THRESHOLD)
                 .fanTotalEfficiency(UPDATED_FAN_TOTAL_EFFICIENCY)
+                .fanTotalEfficiencyThreshold(UPDATED_FAN_TOTAL_EFFICIENCY_THRESHOLD)
                 .pumpsPowerPerWaterFlowRateCircPump(UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP)
+                .pumpsPowerPerWaterFlowRateCircPumpThreshold(UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP_THRESHOLD)
                 .pumpsPowerPerWaterFlowRateHwCircPump(UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP)
+                .pumpsPowerPerWaterFlowRateHwCircPumpThreshold(UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP_THRESHOLD)
                 .pumpsPowerPerWaterFlowRateCondCircPump(UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP)
+                .pumpsPowerPerWaterFlowRateCondCircPumpThreshold(UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP_THRESHOLD)
                 .pumpsHeadCircPump(UPDATED_PUMPS_HEAD_CIRC_PUMP)
+                .pumpsHeadCircPumpThreshold(UPDATED_PUMPS_HEAD_CIRC_PUMP_THRESHOLD)
                 .pumpsHeadHwCircPump(UPDATED_PUMPS_HEAD_HW_CIRC_PUMP)
+                .pumpsHeadHwCircPumpThreshold(UPDATED_PUMPS_HEAD_HW_CIRC_PUMP_THRESHOLD)
                 .pumpsHeadCondCircPump(UPDATED_PUMPS_HEAD_COND_CIRC_PUMP)
+                .pumpsHeadCondCircPumpThreshold(UPDATED_PUMPS_HEAD_COND_CIRC_PUMP_THRESHOLD)
                 .pumpsElectricPowerCircPump(UPDATED_PUMPS_ELECTRIC_POWER_CIRC_PUMP)
+                .pumpsElectricPowerCircPumpThreshold(UPDATED_PUMPS_ELECTRIC_POWER_CIRC_PUMP_THRESHOLD)
                 .pumpsElectricPowerHwCircPump(UPDATED_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP)
+                .pumpsElectricPowerHwCircPumpThreshold(UPDATED_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP_THRESHOLD)
                 .pumpsElectricPowerCondCircPump(UPDATED_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP)
+                .pumpsElectricPowerCondCircPumpThreshold(UPDATED_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP_THRESHOLD)
                 .pumpsMotorEfficiencyCircPump(UPDATED_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP)
+                .pumpsMotorEfficiencyCircPumpThreshold(UPDATED_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP_THRESHOLD)
                 .pumpsMotorEfficiencyHwCircPump(UPDATED_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP)
+                .pumpsMotorEfficiencyHwCircPumpThreshold(UPDATED_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP_THRESHOLD)
                 .pumpsMotorEfficiencyCondCircPump(UPDATED_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP)
+                .pumpsMotorEfficiencyCondCircPumpThreshold(UPDATED_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP_THRESHOLD)
                 .pumpsWaterFlowCircPump(UPDATED_PUMPS_WATER_FLOW_CIRC_PUMP)
+                .pumpsWaterFlowCircPumpThreshold(UPDATED_PUMPS_WATER_FLOW_CIRC_PUMP_THRESHOLD)
                 .pumpsWaterFlowHwCircPump(UPDATED_PUMPS_WATER_FLOW_HW_CIRC_PUMP)
-                .pumpsWaterFlowCondCircPump(UPDATED_PUMPS_WATER_FLOW_COND_CIRC_PUMP);
+                .pumpsWaterFlowHwCircPumpThreshold(UPDATED_PUMPS_WATER_FLOW_HW_CIRC_PUMP_THRESHOLD)
+                .pumpsWaterFlowCondCircPump(UPDATED_PUMPS_WATER_FLOW_COND_CIRC_PUMP)
+                .pumpsWaterFlowCondCircPumpThreshold(UPDATED_PUMPS_WATER_FLOW_COND_CIRC_PUMP_THRESHOLD);
 
         restPadsetMockMvc.perform(put("/api/padsets")
                 .contentType(TestUtil.APPLICATION_JSON_UTF8)
@@ -445,30 +645,55 @@ public class PadsetResourceIntTest {
         assertThat(testPadset.getmLatitude()).isEqualTo(UPDATED_M_LATITUDE);
         assertThat(testPadset.getmLongitude()).isEqualTo(UPDATED_M_LONGITUDE);
         assertThat(testPadset.getCoolingCoilsNominalSensibleHeatRatio()).isEqualTo(UPDATED_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO);
+        assertThat(testPadset.getCoolingCoilsNominalSensibleHeatRatioThreshold()).isEqualTo(UPDATED_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO_THRESHOLD);
         assertThat(testPadset.getCoolingCoilsNominalTotalCapacity()).isEqualTo(UPDATED_COOLING_COILS_NOMINAL_TOTAL_CAPACITY);
+        assertThat(testPadset.getCoolingCoilsNominalTotalCapacityThreshold()).isEqualTo(UPDATED_COOLING_COILS_NOMINAL_TOTAL_CAPACITY_THRESHOLD);
         assertThat(testPadset.getHeatingCoilsNominalTotalCapacityReheatCoilZone1()).isEqualTo(UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1);
+        assertThat(testPadset.getHeatingCoilsNominalTotalCapacityReheatCoilZone1Threshold()).isEqualTo(UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1_THRESHOLD);
         assertThat(testPadset.getHeatingCoilsNominalTotalCapacityReheatCoilZone2()).isEqualTo(UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2);
+        assertThat(testPadset.getHeatingCoilsNominalTotalCapacityReheatCoilZone2Threshold()).isEqualTo(UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2_THRESHOLD);
         assertThat(testPadset.getHeatingCoilsNominalTotalCapacityReheatCoilZone3()).isEqualTo(UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3);
+        assertThat(testPadset.getHeatingCoilsNominalTotalCapacityReheatCoilZone3Threshold()).isEqualTo(UPDATED_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3_THRESHOLD);
         assertThat(testPadset.getFanMaxAirFlowRate()).isEqualTo(UPDATED_FAN_MAX_AIR_FLOW_RATE);
+        assertThat(testPadset.getFanMaxAirFlowRateThreshold()).isEqualTo(UPDATED_FAN_MAX_AIR_FLOW_RATE_THRESHOLD);
         assertThat(testPadset.getFanRatedElectricPower()).isEqualTo(UPDATED_FAN_RATED_ELECTRIC_POWER);
+        assertThat(testPadset.getFanRatedElectricPowerThreshold()).isEqualTo(UPDATED_FAN_RATED_ELECTRIC_POWER_THRESHOLD);
         assertThat(testPadset.getFanRatedPowerPerMaxAirFlowRate()).isEqualTo(UPDATED_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE);
+        assertThat(testPadset.getFanRatedPowerPerMaxAirFlowRateThreshold()).isEqualTo(UPDATED_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE_THRESHOLD);
         assertThat(testPadset.getFanMotorHeatInAirFraction()).isEqualTo(UPDATED_FAN_MOTOR_HEAT_IN_AIR_FRACTION);
+        assertThat(testPadset.getFanMotorHeatInAirFractionThreshold()).isEqualTo(UPDATED_FAN_MOTOR_HEAT_IN_AIR_FRACTION_THRESHOLD);
         assertThat(testPadset.getFanTotalEfficiency()).isEqualTo(UPDATED_FAN_TOTAL_EFFICIENCY);
+        assertThat(testPadset.getFanTotalEfficiencyThreshold()).isEqualTo(UPDATED_FAN_TOTAL_EFFICIENCY_THRESHOLD);
         assertThat(testPadset.getPumpsPowerPerWaterFlowRateCircPump()).isEqualTo(UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP);
+        assertThat(testPadset.getPumpsPowerPerWaterFlowRateCircPumpThreshold()).isEqualTo(UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsPowerPerWaterFlowRateHwCircPump()).isEqualTo(UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP);
+        assertThat(testPadset.getPumpsPowerPerWaterFlowRateHwCircPumpThreshold()).isEqualTo(UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsPowerPerWaterFlowRateCondCircPump()).isEqualTo(UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP);
+        assertThat(testPadset.getPumpsPowerPerWaterFlowRateCondCircPumpThreshold()).isEqualTo(UPDATED_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsHeadCircPump()).isEqualTo(UPDATED_PUMPS_HEAD_CIRC_PUMP);
+        assertThat(testPadset.getPumpsHeadCircPumpThreshold()).isEqualTo(UPDATED_PUMPS_HEAD_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsHeadHwCircPump()).isEqualTo(UPDATED_PUMPS_HEAD_HW_CIRC_PUMP);
+        assertThat(testPadset.getPumpsHeadHwCircPumpThreshold()).isEqualTo(UPDATED_PUMPS_HEAD_HW_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsHeadCondCircPump()).isEqualTo(UPDATED_PUMPS_HEAD_COND_CIRC_PUMP);
+        assertThat(testPadset.getPumpsHeadCondCircPumpThreshold()).isEqualTo(UPDATED_PUMPS_HEAD_COND_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsElectricPowerCircPump()).isEqualTo(UPDATED_PUMPS_ELECTRIC_POWER_CIRC_PUMP);
+        assertThat(testPadset.getPumpsElectricPowerCircPumpThreshold()).isEqualTo(UPDATED_PUMPS_ELECTRIC_POWER_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsElectricPowerHwCircPump()).isEqualTo(UPDATED_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP);
+        assertThat(testPadset.getPumpsElectricPowerHwCircPumpThreshold()).isEqualTo(UPDATED_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsElectricPowerCondCircPump()).isEqualTo(UPDATED_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP);
+        assertThat(testPadset.getPumpsElectricPowerCondCircPumpThreshold()).isEqualTo(UPDATED_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsMotorEfficiencyCircPump()).isEqualTo(UPDATED_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP);
+        assertThat(testPadset.getPumpsMotorEfficiencyCircPumpThreshold()).isEqualTo(UPDATED_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsMotorEfficiencyHwCircPump()).isEqualTo(UPDATED_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP);
+        assertThat(testPadset.getPumpsMotorEfficiencyHwCircPumpThreshold()).isEqualTo(UPDATED_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsMotorEfficiencyCondCircPump()).isEqualTo(UPDATED_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP);
+        assertThat(testPadset.getPumpsMotorEfficiencyCondCircPumpThreshold()).isEqualTo(UPDATED_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsWaterFlowCircPump()).isEqualTo(UPDATED_PUMPS_WATER_FLOW_CIRC_PUMP);
+        assertThat(testPadset.getPumpsWaterFlowCircPumpThreshold()).isEqualTo(UPDATED_PUMPS_WATER_FLOW_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsWaterFlowHwCircPump()).isEqualTo(UPDATED_PUMPS_WATER_FLOW_HW_CIRC_PUMP);
+        assertThat(testPadset.getPumpsWaterFlowHwCircPumpThreshold()).isEqualTo(UPDATED_PUMPS_WATER_FLOW_HW_CIRC_PUMP_THRESHOLD);
         assertThat(testPadset.getPumpsWaterFlowCondCircPump()).isEqualTo(UPDATED_PUMPS_WATER_FLOW_COND_CIRC_PUMP);
+        assertThat(testPadset.getPumpsWaterFlowCondCircPumpThreshold()).isEqualTo(UPDATED_PUMPS_WATER_FLOW_COND_CIRC_PUMP_THRESHOLD);
 
         // Validate the Padset in ElasticSearch
         Padset padsetEs = padsetSearchRepository.findOne(testPadset.getId());
@@ -513,29 +738,54 @@ public class PadsetResourceIntTest {
             .andExpect(jsonPath("$.[*].mLatitude").value(hasItem(DEFAULT_M_LATITUDE.doubleValue())))
             .andExpect(jsonPath("$.[*].mLongitude").value(hasItem(DEFAULT_M_LONGITUDE.doubleValue())))
             .andExpect(jsonPath("$.[*].coolingCoilsNominalSensibleHeatRatio").value(hasItem(DEFAULT_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO.doubleValue())))
+            .andExpect(jsonPath("$.[*].coolingCoilsNominalSensibleHeatRatioThreshold").value(hasItem(DEFAULT_COOLING_COILS_NOMINAL_SENSIBLE_HEAT_RATIO_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].coolingCoilsNominalTotalCapacity").value(hasItem(DEFAULT_COOLING_COILS_NOMINAL_TOTAL_CAPACITY.doubleValue())))
+            .andExpect(jsonPath("$.[*].coolingCoilsNominalTotalCapacityThreshold").value(hasItem(DEFAULT_COOLING_COILS_NOMINAL_TOTAL_CAPACITY_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].heatingCoilsNominalTotalCapacityReheatCoilZone1").value(hasItem(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1.doubleValue())))
+            .andExpect(jsonPath("$.[*].heatingCoilsNominalTotalCapacityReheatCoilZone1Threshold").value(hasItem(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_1_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].heatingCoilsNominalTotalCapacityReheatCoilZone2").value(hasItem(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2.doubleValue())))
+            .andExpect(jsonPath("$.[*].heatingCoilsNominalTotalCapacityReheatCoilZone2Threshold").value(hasItem(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_2_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].heatingCoilsNominalTotalCapacityReheatCoilZone3").value(hasItem(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3.doubleValue())))
+            .andExpect(jsonPath("$.[*].heatingCoilsNominalTotalCapacityReheatCoilZone3Threshold").value(hasItem(DEFAULT_HEATING_COILS_NOMINAL_TOTAL_CAPACITY_REHEAT_COIL_ZONE_3_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].fanMaxAirFlowRate").value(hasItem(DEFAULT_FAN_MAX_AIR_FLOW_RATE.doubleValue())))
+            .andExpect(jsonPath("$.[*].fanMaxAirFlowRateThreshold").value(hasItem(DEFAULT_FAN_MAX_AIR_FLOW_RATE_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].fanRatedElectricPower").value(hasItem(DEFAULT_FAN_RATED_ELECTRIC_POWER.doubleValue())))
+            .andExpect(jsonPath("$.[*].fanRatedElectricPowerThreshold").value(hasItem(DEFAULT_FAN_RATED_ELECTRIC_POWER_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].fanRatedPowerPerMaxAirFlowRate").value(hasItem(DEFAULT_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE.doubleValue())))
+            .andExpect(jsonPath("$.[*].fanRatedPowerPerMaxAirFlowRateThreshold").value(hasItem(DEFAULT_FAN_RATED_POWER_PER_MAX_AIR_FLOW_RATE_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].fanMotorHeatInAirFraction").value(hasItem(DEFAULT_FAN_MOTOR_HEAT_IN_AIR_FRACTION.doubleValue())))
+            .andExpect(jsonPath("$.[*].fanMotorHeatInAirFractionThreshold").value(hasItem(DEFAULT_FAN_MOTOR_HEAT_IN_AIR_FRACTION_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].fanTotalEfficiency").value(hasItem(DEFAULT_FAN_TOTAL_EFFICIENCY.doubleValue())))
+            .andExpect(jsonPath("$.[*].fanTotalEfficiencyThreshold").value(hasItem(DEFAULT_FAN_TOTAL_EFFICIENCY_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].pumpsPowerPerWaterFlowRateCircPump").value(hasItem(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP.doubleValue())))
+            .andExpect(jsonPath("$.[*].pumpsPowerPerWaterFlowRateCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_CIRC_PUMP_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].pumpsPowerPerWaterFlowRateHwCircPump").value(hasItem(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP.doubleValue())))
+            .andExpect(jsonPath("$.[*].pumpsPowerPerWaterFlowRateHwCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_HW_CIRC_PUMP_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].pumpsPowerPerWaterFlowRateCondCircPump").value(hasItem(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP.doubleValue())))
+            .andExpect(jsonPath("$.[*].pumpsPowerPerWaterFlowRateCondCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_POWER_PER_WATER_FLOW_RATE_COND_CIRC_PUMP_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].pumpsHeadCircPump").value(hasItem(DEFAULT_PUMPS_HEAD_CIRC_PUMP.doubleValue())))
+            .andExpect(jsonPath("$.[*].pumpsHeadCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_HEAD_CIRC_PUMP_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].pumpsHeadHwCircPump").value(hasItem(DEFAULT_PUMPS_HEAD_HW_CIRC_PUMP.doubleValue())))
+            .andExpect(jsonPath("$.[*].pumpsHeadHwCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_HEAD_HW_CIRC_PUMP_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].pumpsHeadCondCircPump").value(hasItem(DEFAULT_PUMPS_HEAD_COND_CIRC_PUMP.doubleValue())))
+            .andExpect(jsonPath("$.[*].pumpsHeadCondCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_HEAD_COND_CIRC_PUMP_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].pumpsElectricPowerCircPump").value(hasItem(DEFAULT_PUMPS_ELECTRIC_POWER_CIRC_PUMP.doubleValue())))
+            .andExpect(jsonPath("$.[*].pumpsElectricPowerCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_ELECTRIC_POWER_CIRC_PUMP_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].pumpsElectricPowerHwCircPump").value(hasItem(DEFAULT_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP.doubleValue())))
+            .andExpect(jsonPath("$.[*].pumpsElectricPowerHwCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_ELECTRIC_POWER_HW_CIRC_PUMP_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].pumpsElectricPowerCondCircPump").value(hasItem(DEFAULT_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP.doubleValue())))
+            .andExpect(jsonPath("$.[*].pumpsElectricPowerCondCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_ELECTRIC_POWER_COND_CIRC_PUMP_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].pumpsMotorEfficiencyCircPump").value(hasItem(DEFAULT_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP.doubleValue())))
+            .andExpect(jsonPath("$.[*].pumpsMotorEfficiencyCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_MOTOR_EFFICIENCY_CIRC_PUMP_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].pumpsMotorEfficiencyHwCircPump").value(hasItem(DEFAULT_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP.doubleValue())))
+            .andExpect(jsonPath("$.[*].pumpsMotorEfficiencyHwCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_MOTOR_EFFICIENCY_HW_CIRC_PUMP_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].pumpsMotorEfficiencyCondCircPump").value(hasItem(DEFAULT_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP.doubleValue())))
+            .andExpect(jsonPath("$.[*].pumpsMotorEfficiencyCondCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_MOTOR_EFFICIENCY_COND_CIRC_PUMP_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].pumpsWaterFlowCircPump").value(hasItem(DEFAULT_PUMPS_WATER_FLOW_CIRC_PUMP.doubleValue())))
+            .andExpect(jsonPath("$.[*].pumpsWaterFlowCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_WATER_FLOW_CIRC_PUMP_THRESHOLD.doubleValue())))
             .andExpect(jsonPath("$.[*].pumpsWaterFlowHwCircPump").value(hasItem(DEFAULT_PUMPS_WATER_FLOW_HW_CIRC_PUMP.doubleValue())))
-            .andExpect(jsonPath("$.[*].pumpsWaterFlowCondCircPump").value(hasItem(DEFAULT_PUMPS_WATER_FLOW_COND_CIRC_PUMP.doubleValue())));
+            .andExpect(jsonPath("$.[*].pumpsWaterFlowHwCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_WATER_FLOW_HW_CIRC_PUMP_THRESHOLD.doubleValue())))
+            .andExpect(jsonPath("$.[*].pumpsWaterFlowCondCircPump").value(hasItem(DEFAULT_PUMPS_WATER_FLOW_COND_CIRC_PUMP.doubleValue())))
+            .andExpect(jsonPath("$.[*].pumpsWaterFlowCondCircPumpThreshold").value(hasItem(DEFAULT_PUMPS_WATER_FLOW_COND_CIRC_PUMP_THRESHOLD.doubleValue())));
     }
 }

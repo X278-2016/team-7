@@ -1,6 +1,6 @@
 
 <div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.js"></script>
     <h2><span>Padset</span> {{vm.padset.id}}</h2>
     <hr>
     <jhi-alert-error></jhi-alert-error>
@@ -21,107 +21,203 @@
         <dd>
             <span>{{vm.padset.coolingCoilsNominalSensibleHeatRatio}}</span>
         </dd>
+        <dt><span>Cooling Coils Nominal Sensible Heat Ratio Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.coolingCoilsNominalSensibleHeatRatioThreshold}}</span>
+        </dd>
         <dt><span>Cooling Coils Nominal Total Capacity</span></dt>
         <dd>
             <span>{{vm.padset.coolingCoilsNominalTotalCapacity}}</span>
+        </dd>
+        <dt><span>Cooling Coils Nominal Total Capacity Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.coolingCoilsNominalTotalCapacityThreshold}}</span>
         </dd>
         <dt><span>Heating Coils Nominal Total Capacity Reheat Coil Zone 1</span></dt>
         <dd>
             <span>{{vm.padset.heatingCoilsNominalTotalCapacityReheatCoilZone1}}</span>
         </dd>
+        <dt><span>Heating Coils Nominal Total Capacity Reheat Coil Zone 1 Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.heatingCoilsNominalTotalCapacityReheatCoilZone1Threshold}}</span>
+        </dd>
         <dt><span>Heating Coils Nominal Total Capacity Reheat Coil Zone 2</span></dt>
         <dd>
             <span>{{vm.padset.heatingCoilsNominalTotalCapacityReheatCoilZone2}}</span>
+        </dd>
+        <dt><span>Heating Coils Nominal Total Capacity Reheat Coil Zone 2 Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.heatingCoilsNominalTotalCapacityReheatCoilZone2Threshold}}</span>
         </dd>
         <dt><span>Heating Coils Nominal Total Capacity Reheat Coil Zone 3</span></dt>
         <dd>
             <span>{{vm.padset.heatingCoilsNominalTotalCapacityReheatCoilZone3}}</span>
         </dd>
+        <dt><span>Heating Coils Nominal Total Capacity Reheat Coil Zone 3 Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.heatingCoilsNominalTotalCapacityReheatCoilZone3Threshold}}</span>
+        </dd>
         <dt><span>Fan Max Air Flow Rate</span></dt>
         <dd>
             <span>{{vm.padset.fanMaxAirFlowRate}}</span>
+        </dd>
+        <dt><span>Fan Max Air Flow Rate Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.fanMaxAirFlowRateThreshold}}</span>
         </dd>
         <dt><span>Fan Rated Electric Power</span></dt>
         <dd>
             <span>{{vm.padset.fanRatedElectricPower}}</span>
         </dd>
+        <dt><span>Fan Rated Electric Power Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.fanRatedElectricPowerThreshold}}</span>
+        </dd>
         <dt><span>Fan Rated Power Per Max Air Flow Rate</span></dt>
         <dd>
             <span>{{vm.padset.fanRatedPowerPerMaxAirFlowRate}}</span>
+        </dd>
+        <dt><span>Fan Rated Power Per Max Air Flow Rate Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.fanRatedPowerPerMaxAirFlowRateThreshold}}</span>
         </dd>
         <dt><span>Fan Motor Heat In Air Fraction</span></dt>
         <dd>
             <span>{{vm.padset.fanMotorHeatInAirFraction}}</span>
         </dd>
+        <dt><span>Fan Motor Heat In Air Fraction Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.fanMotorHeatInAirFractionThreshold}}</span>
+        </dd>
         <dt><span>Fan Total Efficiency</span></dt>
         <dd>
             <span>{{vm.padset.fanTotalEfficiency}}</span>
+        </dd>
+        <dt><span>Fan Total Efficiency Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.fanTotalEfficiencyThreshold}}</span>
         </dd>
         <dt><span>Pumps Power Per Water Flow Rate Circ Pump</span></dt>
         <dd>
             <span>{{vm.padset.pumpsPowerPerWaterFlowRateCircPump}}</span>
         </dd>
+        <dt><span>Pumps Power Per Water Flow Rate Circ Pump Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsPowerPerWaterFlowRateCircPumpThreshold}}</span>
+        </dd>
         <dt><span>Pumps Power Per Water Flow Rate Hw Circ Pump</span></dt>
         <dd>
             <span>{{vm.padset.pumpsPowerPerWaterFlowRateHwCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Power Per Water Flow Rate Hw Circ Pump Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsPowerPerWaterFlowRateHwCircPumpThreshold}}</span>
         </dd>
         <dt><span>Pumps Power Per Water Flow Rate Cond Circ Pump</span></dt>
         <dd>
             <span>{{vm.padset.pumpsPowerPerWaterFlowRateCondCircPump}}</span>
         </dd>
+        <dt><span>Pumps Power Per Water Flow Rate Cond Circ Pump Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsPowerPerWaterFlowRateCondCircPumpThreshold}}</span>
+        </dd>
         <dt><span>Pumps Head Circ Pump</span></dt>
         <dd>
             <span>{{vm.padset.pumpsHeadCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Head Circ Pump Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsHeadCircPumpThreshold}}</span>
         </dd>
         <dt><span>Pumps Head Hw Circ Pump</span></dt>
         <dd>
             <span>{{vm.padset.pumpsHeadHwCircPump}}</span>
         </dd>
+        <dt><span>Pumps Head Hw Circ Pump Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsHeadHwCircPumpThreshold}}</span>
+        </dd>
         <dt><span>Pumps Head Cond Circ Pump</span></dt>
         <dd>
             <span>{{vm.padset.pumpsHeadCondCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Head Cond Circ Pump Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsHeadCondCircPumpThreshold}}</span>
         </dd>
         <dt><span>Pumps Electric Power Circ Pump</span></dt>
         <dd>
             <span>{{vm.padset.pumpsElectricPowerCircPump}}</span>
         </dd>
+        <dt><span>Pumps Electric Power Circ Pump Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsElectricPowerCircPumpThreshold}}</span>
+        </dd>
         <dt><span>Pumps Electric Power Hw Circ Pump</span></dt>
         <dd>
             <span>{{vm.padset.pumpsElectricPowerHwCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Electric Power Hw Circ Pump Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsElectricPowerHwCircPumpThreshold}}</span>
         </dd>
         <dt><span>Pumps Electric Power Cond Circ Pump</span></dt>
         <dd>
             <span>{{vm.padset.pumpsElectricPowerCondCircPump}}</span>
         </dd>
+        <dt><span>Pumps Electric Power Cond Circ Pump Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsElectricPowerCondCircPumpThreshold}}</span>
+        </dd>
         <dt><span>Pumps Motor Efficiency Circ Pump</span></dt>
         <dd>
             <span>{{vm.padset.pumpsMotorEfficiencyCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Motor Efficiency Circ Pump Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsMotorEfficiencyCircPumpThreshold}}</span>
         </dd>
         <dt><span>Pumps Motor Efficiency Hw Circ Pump</span></dt>
         <dd>
             <span>{{vm.padset.pumpsMotorEfficiencyHwCircPump}}</span>
         </dd>
+        <dt><span>Pumps Motor Efficiency Hw Circ Pump Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsMotorEfficiencyHwCircPumpThreshold}}</span>
+        </dd>
         <dt><span>Pumps Motor Efficiency Cond Circ Pump</span></dt>
         <dd>
             <span>{{vm.padset.pumpsMotorEfficiencyCondCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Motor Efficiency Cond Circ Pump Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsMotorEfficiencyCondCircPumpThreshold}}</span>
         </dd>
         <dt><span>Pumps Water Flow Circ Pump</span></dt>
         <dd>
             <span>{{vm.padset.pumpsWaterFlowCircPump}}</span>
         </dd>
+        <dt><span>Pumps Water Flow Circ Pump Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsWaterFlowCircPumpThreshold}}</span>
+        </dd>
         <dt><span>Pumps Water Flow Hw Circ Pump</span></dt>
         <dd>
             <span>{{vm.padset.pumpsWaterFlowHwCircPump}}</span>
+        </dd>
+        <dt><span>Pumps Water Flow Hw Circ Pump Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsWaterFlowHwCircPumpThreshold}}</span>
         </dd>
         <dt><span>Pumps Water Flow Cond Circ Pump</span></dt>
         <dd>
             <span>{{vm.padset.pumpsWaterFlowCondCircPump}}</span>
         </dd>
+        <dt><span>Pumps Water Flow Cond Circ Pump Threshold</span></dt>
+        <dd>
+            <span>{{vm.padset.pumpsWaterFlowCondCircPumpThreshold}}</span>
+        </dd>
     </dl>
-    
-    <button ng-click="makeAPIcall(vm.padset.id)"> Get Data</button>
-    
-
 
     <button type="submit"
             ui-sref="{{ vm.previousState }}"
@@ -134,17 +230,18 @@
         <span class="hidden-xs hidden-sm"> Edit</span>
     </button>
     
+     <button ng-click="makeAPIcall(vm.padset.id)"> Get Data</button>
     
-    <canvas id="coolingCoilNominalTotalCapacityGraph" width="400" height="400"></canvas>
-    <canvas id="coolingCoilNominalSensibleHeatRatioGraph" width="400" height="400"></canvas>
+     <canvas id="coolingCoilNominalTotalCapacityGraph" width="400" height="400"></canvas>
+     <canvas id="coolingCoilNominalSensibleHeatRatioGraph" width="400" height="400"></canvas>
+     
+     <canvas id="fanGraph1" width="400" height="400"></canvas>
+     <canvas id="fanGraph2" width="400" height="400"></canvas>
+     
+     <canvas id="heatingCoilGraph1" width="400" height="400"></canvas>
+     
+     <canvas id="pumpsGraph1" width="400" height="800"></canvas>
+     <canvas id="pumpsGraph2" width="400" height="400"></canvas>    
     
-    <canvas id="fanGraph1" width="400" height="400"></canvas>
-    <canvas id="fanGraph2" width="400" height="400"></canvas>
     
-    <canvas id="heatingCoilGraph1" width="400" height="400"></canvas>
-    
-    <canvas id="pumpsGraph1" width="400" height="800"></canvas>
-    <canvas id="pumpsGraph2" width="400" height="400"></canvas>
-
 </div>
-

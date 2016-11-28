@@ -1,9 +1,9 @@
-function makeAPIcall(){
+function makeAPIcall2(){
 	var geoarray = [];
 	$.ajax({
         type: "GET",
         dataType: "json",
-        url:"http://localhost:8080/api/padsets"
+        url:"http://localhost:8080/api/padsets/"
     }).done(function(data){
 
        var jsonArr = data;
@@ -13,10 +13,12 @@ function makeAPIcall(){
        		geoObj['latitude'] = jsonArr[x].mLatitude;
        		geoObj['longitude'] = jsonArr[x].mLongitude;
 
+       		console.log(geoObj)
        		geoarray.push(geoObj);
-       }      
-       return geoarray;
+       } 
+       console.log(geoarray)
     });
+	return geoarray;
    
 }
 

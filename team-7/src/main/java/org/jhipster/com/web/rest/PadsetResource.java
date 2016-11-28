@@ -1,6 +1,7 @@
 package org.jhipster.com.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
+import org.jhipster.com.domain.Padset;
 
 import org.jhipster.com.repository.PadsetRepository;
 import org.jhipster.com.repository.search.PadsetSearchRepository;
@@ -15,8 +16,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.inject.Inject;
 import javax.validation.Valid;
-
-import java.io.File;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
@@ -25,8 +24,9 @@ import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 import static org.elasticsearch.index.query.QueryBuilders.*;
-
 import org.jhipster.com.domain.*;
+import java.io.File;
+
 /**
  * REST controller for managing Padset.
  */
@@ -64,45 +64,6 @@ public class PadsetResource {
             .headers(HeaderUtil.createEntityCreationAlert("padset", result.getId().toString()))
             .body(result);
     }
-    
-    /**
-     * POST /create/padsets
-     * 
-     * 
-     */
-      @RequestMapping(value = "/create/padsets",
-            method = RequestMethod.GET,
-            produces = MediaType.APPLICATION_JSON_VALUE)
-        @Timed
-        public ResponseEntity<Padset> createPadsetFromURL(@PathVariable String fileName) throws URISyntaxException {
-    	  log.debug("Creating Padset from URL");
-    	  System.out.println("Creating Padset from URL");
-    	  PadsetDeserializer mPadsetDeserializer = new PadsetDeserializer();
-  		  File testFile = new File("mockData.json");
-  		  Padset padset = mPadsetDeserializer.getPadsetFromJSON(testFile);
-          return createPadset( padset);
-        }
-      
-      /**
-       * POST /create/padsets
-       * 
-       * 
-       */
-        @RequestMapping(value = "/create/padsets/{id}",
-              method = RequestMethod.GET,
-              produces = MediaType.APPLICATION_JSON_VALUE)
-          @Timed
-    public ResponseEntity<Padset> updatePadsetFromURL( @PathVariable Long id) throws URISyntaxException {
-      	  log.debug("Update Padset from URL");
-      	  System.out.println("Update Padset from URL");
-      	  PadsetDeserializer mPadsetDeserializer = new PadsetDeserializer();
-          File testFile = new File("mockData.json");
-    	  Padset padset = mPadsetDeserializer.getPadsetFromJSON(testFile);
-    	  padset.setId(id);
-    	  return updatePadset(padset);
-    }
-    
-    
 
     /**
      * PUT  /padsets : Updates an existing padset.
@@ -199,6 +160,43 @@ public class PadsetResource {
             .collect(Collectors.toList());
     }
     
-    //
+    
+    /**
+     * POST /create/padsets
+     * 
+     * 
+     */
+      @RequestMapping(value = "/create/padsets",
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+        @Timed
+        public ResponseEntity<Padset> createPadsetFromURL() throws URISyntaxException {
+    	  log.debug("Creating Padset from URL");
+    	  System.out.println("Creating Padset from URL");
+    	  PadsetDeserializer mPadsetDeserializer = new PadsetDeserializer();
+  		  File testFile = new File("mockData.json");
+  		  Padset padset = mPadsetDeserializer.getPadsetFromJSON(testFile);
+          return createPadset( padset);
+        }
+      
+      /**
+       * POST /create/padsets
+       * 
+       * 
+       */
+        @RequestMapping(value = "/create/padsets/{id}",
+              method = RequestMethod.GET,
+              produces = MediaType.APPLICATION_JSON_VALUE)
+          @Timed
+    public ResponseEntity<Padset> updatePadsetFromURL( @PathVariable Long id) throws URISyntaxException {
+      	  log.debug("Update Padset from URL");
+      	  System.out.println("Update Padset from URL");
+      	  PadsetDeserializer mPadsetDeserializer = new PadsetDeserializer();
+          File testFile = new File("mockData.json");
+    	  Padset padset = mPadsetDeserializer.getPadsetFromJSON(testFile);
+    	  padset.setId(id);
+    	  return updatePadset(padset);
+    }
+
 
 }

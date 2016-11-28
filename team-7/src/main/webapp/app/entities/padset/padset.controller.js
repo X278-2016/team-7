@@ -20,8 +20,6 @@
             Padset.query(function(result) {
                 vm.padsets = result;
             });
-            
-            console.log("TEST")
         }
 
         function search () {
@@ -31,7 +29,5 @@
             PadsetSearch.query({query: vm.searchQuery}, function(result) {
                 vm.padsets = result;
             });
-        }    
-        }
+        }    }
 })();
-

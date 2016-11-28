@@ -1,5 +1,6 @@
 <div>
     <h2>Padsets</h2>
+     <script type="text/javascript" src="app/entities/padset/getData.js"></script>
     <jhi-alert></jhi-alert>
     <div class="container-fluid">
         <div class="row">
@@ -40,30 +41,55 @@
                     <th><span>M Latitude</span></th>
                     <th><span>M Longitude</span></th>
                     <th><span>Cooling Coils Nominal Sensible Heat Ratio</span></th>
+                    <th><span>Cooling Coils Nominal Sensible Heat Ratio Threshold</span></th>
                     <th><span>Cooling Coils Nominal Total Capacity</span></th>
+                    <th><span>Cooling Coils Nominal Total Capacity Threshold</span></th>
                     <th><span>Heating Coils Nominal Total Capacity Reheat Coil Zone 1</span></th>
+                    <th><span>Heating Coils Nominal Total Capacity Reheat Coil Zone 1 Threshold</span></th>
                     <th><span>Heating Coils Nominal Total Capacity Reheat Coil Zone 2</span></th>
+                    <th><span>Heating Coils Nominal Total Capacity Reheat Coil Zone 2 Threshold</span></th>
                     <th><span>Heating Coils Nominal Total Capacity Reheat Coil Zone 3</span></th>
+                    <th><span>Heating Coils Nominal Total Capacity Reheat Coil Zone 3 Threshold</span></th>
                     <th><span>Fan Max Air Flow Rate</span></th>
+                    <th><span>Fan Max Air Flow Rate Threshold</span></th>
                     <th><span>Fan Rated Electric Power</span></th>
+                    <th><span>Fan Rated Electric Power Threshold</span></th>
                     <th><span>Fan Rated Power Per Max Air Flow Rate</span></th>
+                    <th><span>Fan Rated Power Per Max Air Flow Rate Threshold</span></th>
                     <th><span>Fan Motor Heat In Air Fraction</span></th>
+                    <th><span>Fan Motor Heat In Air Fraction Threshold</span></th>
                     <th><span>Fan Total Efficiency</span></th>
+                    <th><span>Fan Total Efficiency Threshold</span></th>
                     <th><span>Pumps Power Per Water Flow Rate Circ Pump</span></th>
+                    <th><span>Pumps Power Per Water Flow Rate Circ Pump Threshold</span></th>
                     <th><span>Pumps Power Per Water Flow Rate Hw Circ Pump</span></th>
+                    <th><span>Pumps Power Per Water Flow Rate Hw Circ Pump Threshold</span></th>
                     <th><span>Pumps Power Per Water Flow Rate Cond Circ Pump</span></th>
+                    <th><span>Pumps Power Per Water Flow Rate Cond Circ Pump Threshold</span></th>
                     <th><span>Pumps Head Circ Pump</span></th>
+                    <th><span>Pumps Head Circ Pump Threshold</span></th>
                     <th><span>Pumps Head Hw Circ Pump</span></th>
+                    <th><span>Pumps Head Hw Circ Pump Threshold</span></th>
                     <th><span>Pumps Head Cond Circ Pump</span></th>
+                    <th><span>Pumps Head Cond Circ Pump Threshold</span></th>
                     <th><span>Pumps Electric Power Circ Pump</span></th>
+                    <th><span>Pumps Electric Power Circ Pump Threshold</span></th>
                     <th><span>Pumps Electric Power Hw Circ Pump</span></th>
+                    <th><span>Pumps Electric Power Hw Circ Pump Threshold</span></th>
                     <th><span>Pumps Electric Power Cond Circ Pump</span></th>
+                    <th><span>Pumps Electric Power Cond Circ Pump Threshold</span></th>
                     <th><span>Pumps Motor Efficiency Circ Pump</span></th>
+                    <th><span>Pumps Motor Efficiency Circ Pump Threshold</span></th>
                     <th><span>Pumps Motor Efficiency Hw Circ Pump</span></th>
+                    <th><span>Pumps Motor Efficiency Hw Circ Pump Threshold</span></th>
                     <th><span>Pumps Motor Efficiency Cond Circ Pump</span></th>
+                    <th><span>Pumps Motor Efficiency Cond Circ Pump Threshold</span></th>
                     <th><span>Pumps Water Flow Circ Pump</span></th>
+                    <th><span>Pumps Water Flow Circ Pump Threshold</span></th>
                     <th><span>Pumps Water Flow Hw Circ Pump</span></th>
+                    <th><span>Pumps Water Flow Hw Circ Pump Threshold</span></th>
                     <th><span>Pumps Water Flow Cond Circ Pump</span></th>
+                    <th><span>Pumps Water Flow Cond Circ Pump Threshold</span></th>
                     <th></th>
                 </tr>
             </thead>
@@ -74,30 +100,55 @@
                     <td>{{padset.mLatitude}}</td>
                     <td>{{padset.mLongitude}}</td>
                     <td>{{padset.coolingCoilsNominalSensibleHeatRatio}}</td>
+                    <td>{{padset.coolingCoilsNominalSensibleHeatRatioThreshold}}</td>
                     <td>{{padset.coolingCoilsNominalTotalCapacity}}</td>
+                    <td>{{padset.coolingCoilsNominalTotalCapacityThreshold}}</td>
                     <td>{{padset.heatingCoilsNominalTotalCapacityReheatCoilZone1}}</td>
+                    <td>{{padset.heatingCoilsNominalTotalCapacityReheatCoilZone1Threshold}}</td>
                     <td>{{padset.heatingCoilsNominalTotalCapacityReheatCoilZone2}}</td>
+                    <td>{{padset.heatingCoilsNominalTotalCapacityReheatCoilZone2Threshold}}</td>
                     <td>{{padset.heatingCoilsNominalTotalCapacityReheatCoilZone3}}</td>
+                    <td>{{padset.heatingCoilsNominalTotalCapacityReheatCoilZone3Threshold}}</td>
                     <td>{{padset.fanMaxAirFlowRate}}</td>
+                    <td>{{padset.fanMaxAirFlowRateThreshold}}</td>
                     <td>{{padset.fanRatedElectricPower}}</td>
+                    <td>{{padset.fanRatedElectricPowerThreshold}}</td>
                     <td>{{padset.fanRatedPowerPerMaxAirFlowRate}}</td>
+                    <td>{{padset.fanRatedPowerPerMaxAirFlowRateThreshold}}</td>
                     <td>{{padset.fanMotorHeatInAirFraction}}</td>
+                    <td>{{padset.fanMotorHeatInAirFractionThreshold}}</td>
                     <td>{{padset.fanTotalEfficiency}}</td>
+                    <td>{{padset.fanTotalEfficiencyThreshold}}</td>
                     <td>{{padset.pumpsPowerPerWaterFlowRateCircPump}}</td>
+                    <td>{{padset.pumpsPowerPerWaterFlowRateCircPumpThreshold}}</td>
                     <td>{{padset.pumpsPowerPerWaterFlowRateHwCircPump}}</td>
+                    <td>{{padset.pumpsPowerPerWaterFlowRateHwCircPumpThreshold}}</td>
                     <td>{{padset.pumpsPowerPerWaterFlowRateCondCircPump}}</td>
+                    <td>{{padset.pumpsPowerPerWaterFlowRateCondCircPumpThreshold}}</td>
                     <td>{{padset.pumpsHeadCircPump}}</td>
+                    <td>{{padset.pumpsHeadCircPumpThreshold}}</td>
                     <td>{{padset.pumpsHeadHwCircPump}}</td>
+                    <td>{{padset.pumpsHeadHwCircPumpThreshold}}</td>
                     <td>{{padset.pumpsHeadCondCircPump}}</td>
+                    <td>{{padset.pumpsHeadCondCircPumpThreshold}}</td>
                     <td>{{padset.pumpsElectricPowerCircPump}}</td>
+                    <td>{{padset.pumpsElectricPowerCircPumpThreshold}}</td>
                     <td>{{padset.pumpsElectricPowerHwCircPump}}</td>
+                    <td>{{padset.pumpsElectricPowerHwCircPumpThreshold}}</td>
                     <td>{{padset.pumpsElectricPowerCondCircPump}}</td>
+                    <td>{{padset.pumpsElectricPowerCondCircPumpThreshold}}</td>
                     <td>{{padset.pumpsMotorEfficiencyCircPump}}</td>
+                    <td>{{padset.pumpsMotorEfficiencyCircPumpThreshold}}</td>
                     <td>{{padset.pumpsMotorEfficiencyHwCircPump}}</td>
+                    <td>{{padset.pumpsMotorEfficiencyHwCircPumpThreshold}}</td>
                     <td>{{padset.pumpsMotorEfficiencyCondCircPump}}</td>
+                    <td>{{padset.pumpsMotorEfficiencyCondCircPumpThreshold}}</td>
                     <td>{{padset.pumpsWaterFlowCircPump}}</td>
+                    <td>{{padset.pumpsWaterFlowCircPumpThreshold}}</td>
                     <td>{{padset.pumpsWaterFlowHwCircPump}}</td>
+                    <td>{{padset.pumpsWaterFlowHwCircPumpThreshold}}</td>
                     <td>{{padset.pumpsWaterFlowCondCircPump}}</td>
+                    <td>{{padset.pumpsWaterFlowCondCircPumpThreshold}}</td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">
                             <button type="submit"
@@ -123,5 +174,61 @@
                 </tr>
             </tbody>
         </table>
+    
+    <div>
+
+    <button type="button" id="viewMapButton" onclick="initMap()"> View Map </button>
+
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+
+    <div id="map">
+    <script>
+      function initMap() {
+        //Get a list of latitude, longitude and names from the 
+        
+        var geolocatedArray = makeAPIcall2();
+        setTimeout(function() {
+            console.log(geolocatedArray);
+            console.log(JSON.stringify(geolocatedArray));
+            var uluru = {lat: 0.0, lng: 0.0};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 4,
+                  center: uluru
+                });
+                for(var x in geolocatedArray){
+                    var mylat = geolocatedArray[x]['latitude'];
+                    var mylong = geolocatedArray[x]['longitude'];
+                    console.log(x);
+                    console.log(JSON.stringify(x));
+                    var myposition = {lat: mylat, lng: mylong};
+                    console.log(myposition);
+                    console.log(JSON.stringify(myposition));
+                    var marker = new google.maps.Marker({
+                        position: myposition,
+                        map: map
+                    });
+                }
+                }, 100);
+        
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAep8QM3NsXA8RBwc59jtoeEZvzQ8w-ER8&callback=initMap">
+    </script>
+
+
+
+
+    </div> 
+     
+     
+     
+        
+        
     </div>
 </div>

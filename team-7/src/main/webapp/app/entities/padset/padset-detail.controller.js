@@ -48,24 +48,18 @@
         	    type: 'bar',
         	    data: {
         	        labels: ["Cooling Coil Total Capacity"],
-        	        datasets: [{
-        	            label: 'Cooling Coil Total Capacity',
-        	            data: [ data['coolingCoilsNominalTotalCapacity']],
-        	            backgroundColor: [
-        	                'rgba(255, 99, 132, 0.2)',
-        	               
-        	            ],
-        	            borderWidth: 1
-        	        }]
-        	    },
-        	    options: {
-        	        scales: {
-        	            yAxes: [{
-        	                ticks: {
-        	                    beginAtZero:true
-        	                }
-        	            }]
-        	        }
+        	        datasets: [
+        	        {
+        	        	label: "Cooling Coil Total Capacity",
+        	        	backgroundColor:'rgba(255,153,0,0.4)',
+        	        	data: [data['coolingCoilsNominalTotalCapacity']]
+        	        },
+        	        { 
+        	        	label: " Cooling Coil Total Capacity Threshold",
+        	        	backgroundColor:'rgba(150,15,150,0.4)',
+        	        	data: [data['coolingCoilsNominalTotalCapacityThreshold']]
+        	        }  
+        	        ]
         	    }
         	});
         	
@@ -75,24 +69,19 @@
         	    type: 'bar',
         	    data: {
         	        labels: ["Cooling Coil Nominal Sensible Heat Ratio"],
-        	        datasets: [{
-        	            label: 'Cooling Coil Nominal Sensible Heat Ratio',
-        	            data: [data['coolingCoilsNominalSensibleHeatRatio']],
-        	            backgroundColor: [
-        	            	'rgba(255, 206, 86, 0.2)',
-        	               
-        	            ],
-        	            borderWidth: 1
-        	        }]
-        	    },
-        	    options: {
-        	        scales: {
-        	            yAxes: [{
-        	                ticks: {
-        	                    beginAtZero:true
-        	                }
-        	            }]
-        	        }
+        	        datasets: [
+        	        	{
+            	        	label: "Cooling Coil Nominal Sensible Heat Ratio",
+            	        	backgroundColor:'rgba(255,153,0,0.4)',
+            	        	data: [data['coolingCoilsNominalSensibleHeatRatio']]
+            	        },
+            	        { 
+            	        	label: "Cooling Coil Nominal Sensible Heat Ratio Threshold",
+            	        	backgroundColor:'rgba(150,15,150,0.4)',
+            	        	data: [data['coolingCoilsNominalSensibleHeatRatioThreshold']]
+            	        }  
+            	        
+            	        ]
         	    }
         	});
         	
@@ -100,27 +89,20 @@
         	var myChart3 = new Chart(fanGraph1, {
         	    type: 'bar',
         	    data: {
-        	        labels: ["Max Air Flow Rate","Motor Heat In Air", "Total Efficiency"],
-        	        datasets: [{
-        	            label: 'Fan Metrics',
-        	            data: [data['fanMaxAirFlowRate'], data['fanMotorHeatInAirFraction'], data['fanTotalEfficiency']],
-        	            backgroundColor: [
-        	            	'rgba(255, 99, 132, 0.2)',
-        	                'rgba(54, 162, 235, 0.2)',
-        	                'rgba(255, 206, 86, 0.2)',
-        	               
-        	            ],
-        	            borderWidth: 1
-        	        }]
-        	    },
-        	    options: {
-        	        scales: {
-        	            yAxes: [{
-        	                ticks: {
-        	                    beginAtZero:true
-        	                }
-        	            }]
-        	        }
+        	        labels: ["Max Air Flow Rate",  "Motor Heat In Air"
+        	        	,"Total Efficiency"],
+        	        datasets: [
+        	        	{
+        	        	  label: ["Value"],
+        	        	  data: [data['fanMaxAirFlowRate'], data['fanMotorHeatInAirFraction'], data['fanTotalEfficiency']],
+        	        	  backgroundColor: 'rgba(255,153,0,0.4)'  
+        	        	},
+        	        	{
+          	        	  label: ["Threshold"],
+          	        	  data: [data['fanMaxAirFlowRateThreshold'], data['fanMotorHeatInAirFractionThreshold'], data['fanTotalEfficiencyThreshold']],
+          	        	  backgroundColor:'rgba(150,15,150,0.4)',
+          	        	}   	
+        	        ]
         	    }
         	});
         	
@@ -128,27 +110,19 @@
         	var myChart4 = new Chart(fanGraph2, {
         	    type: 'bar',
         	    data: {
-        	        labels: ["Electric Power","Power Per Air Max Flow Rate"],
-        	        datasets: [{
-        	            label: 'Fan Metrics',
-        	            data: [data['fanRatedElectricPower'], data['fanRatedPowerPerMaxAirFlowRate']],
-        	            backgroundColor: [
-        	            	'rgba(255, 99, 132, 0.2)',
-        	                'rgba(54, 162, 235, 0.2)',
-        	                'rgba(255, 206, 86, 0.2)',
-        	               
-        	            ],
-        	            borderWidth: 1
-        	        }]
-        	    },
-        	    options: {
-        	        scales: {
-        	            yAxes: [{
-        	                ticks: {
-        	                    beginAtZero:true
-        	                }
-        	            }]
-        	        }
+        	        labels: ["Electric Power", "Power Per Air Max Flow Rate"],
+        	        datasets: [
+        	        	{
+          	        	  label: ["Value"],
+          	        	  data: [data['fanRatedElectricPower'], data['fanRatedPowerPerMaxAirFlowRate']],
+          	        	  backgroundColor: 'rgba(255,153,0,0.4)'  
+          	        	},
+          	        	{
+            	        	  label: ["Threshold"],
+            	        	  data: [data['fanRatedElectricPowerThreshold'], data['fanRatedPowerPerMaxAirFlowRateThreshold']],
+            	        	  backgroundColor:'rgba(150,15,150,0.4)',
+            	        }  
+        	        ]
         	    }
         	});
         	
@@ -156,51 +130,49 @@
         	var myChart5  = new Chart(heatingCoilGraph1, {
         	    type: 'bar',
         	    data: {
-        	        labels: ["Reheat Coil Zone 1","Reheat Coil Zone 2","Reheat Coil Zone 3" ],
-        	        datasets: [{
-        	            label: 'Heating Coil Nominal Total Capacity',
-        	            data: [data['heatingCoilsNominalTotalCapacityReheatCoilZone1'], data['heatingCoilsNominalTotalCapacityReheatCoilZone2'],
-        	            	   data['heatingCoilsNominalTotalCapacityReheatCoilZone3']],
-        	            backgroundColor: [
-        	            	'rgba(255, 99, 132, 0.2)',
-        	                'rgba(54, 162, 235, 0.2)',
-        	                'rgba(255, 206, 86, 0.2)',
-        	               
-        	            ],
-        	            borderWidth: 1
-        	        }]
-        	    },
-        	    options: {
-        	        scales: {
-        	            yAxes: [{
-        	                ticks: {
-        	                    beginAtZero:true
-        	                }
-        	            }]
-        	        }
+        	        labels: ["Nominal Total Capacity Reheat Coil Zone 1",
+        	        		 "Nominal Total Capacity Reheat Coil Zone 2",
+        	        	     "Nominal Total Capacity Reheat Coil Zone 3",],
+        	        datasets: 	
+        	        [
+        	        		{
+            	        	  label: ["Value"],
+            	        	  data: [data['heatingCoilsNominalTotalCapacityReheatCoilZone1'],data['heatingCoilsNominalTotalCapacityReheatCoilZone2'],
+            	        		  data['heatingCoilsNominalTotalCapacityReheatCoilZone3']],
+            	        	  backgroundColor: 'rgba(255,153,0,0.4)'  
+            	        	},
+            	            {
+              	        	  label: ["Threshold"],
+              	        	  data:  [data['heatingCoilsNominalTotalCapacityReheatCoilZone1Threshold'],data['heatingCoilsNominalTotalCapacityReheatCoilZone2Threshold'],
+            	        		  data['heatingCoilsNominalTotalCapacityReheatCoilZone3Threshold']],
+              	        	  backgroundColor: 'rgba(255,153,150,0.4)'  
+              	        	}
+       	
+        	        ]
         	    }
         	});
         	
         	var pumpsGraph1 = document.getElementById("pumpsGraph1")
         	var pumpData = {
-			    labels: ["Circ Pump", "Cond Circ Pump", "HW Circ Pump"],
+			    labels: ["Circ Pump - Power Per Water Flow Rate", "Cond Circ Pump - Power Per Water Flow Rate", "HW Circ Pump - Power Per Water Flow Rate",
+			    	"Circ Pump - Head[pressure] ", "Cond Circ Pump -Head[pressure] ", "HW Circ Pump - Head[pressure] ",
+			    	"Circ Pump - Electric Power", "Cond Circ Pump - Electric Power", "HW Circ Pump - Electric Power",],
 			    datasets: [
 			        {
-			            label: "Power Per Water Flow Rate",
+			            label: "Value",
 			            backgroundColor:'rgba(255, 99, 132, 0.2)',
-			            data: [data['pumpsPowerPerWaterFlowRateCircPump'],data['pumpsPowerPerWaterFlowRateCondCircPump'],data['pumpsPowerPerWaterFlowRateHwCircPump']]
+			            data: [data['pumpsPowerPerWaterFlowRateCircPump'],data['pumpsPowerPerWaterFlowRateCondCircPump'],data['pumpsPowerPerWaterFlowRateHwCircPump'],
+			            	   data['pumpsHeadCircPump'],data['pumpsHeadCondCircPump'],data['pumpsHeadHwCircPump'],
+			            	   data['pumpsElectricPowerCircPump'],data['pumpsElectricPowerCondCircPump'],data['pumpsElectricPowerHwCircPump']]
+			            	   
 			        },
 			        {
-			            label: "Head [Pressure] ",
+			            label: "Threshold",
 			            backgroundColor:'rgba(54, 162, 235, 0.2)',
-			            data: [data['pumpsHeadCircPump'],data['pumpsHeadCondCircPump'],data['pumpsHeadHwCircPump']]
+			            data: [data['pumpsPowerPerWaterFlowRateCircPumpThreshold'],data['pumpsPowerPerWaterFlowRateCondCircPumpThreshold'],data['pumpsPowerPerWaterFlowRateHwCircPumpThreshold'],
+			            	   data['pumpsHeadCircPumpThreshold'],data['pumpsHeadCondCircPumpThreshold'],data['pumpsHeadHwCircPumpThreshold'],
+			            	   data['pumpsElectricPowerCircPumpThreshold'],data['pumpsElectricPowerCondCircPumpThreshold'],data['pumpsElectricPowerHwCircPumpThreshold']]
 			        },
-			        
-			        {
-			            label: "Electric Power ",
-			            backgroundColor:'rgba(54, 162, 235, 0.2)',
-			            data: [data['pumpsElectricPowerCircPump'],data['pumpsElectricPowerCondCircPump'],data['pumpsElectricPowerHwCircPump']]
-			        }
 			     ]
         	};
         	var myChart6  = new Chart(pumpsGraph1, {
@@ -219,23 +191,25 @@
         	
         	var pumpsGraph2 = document.getElementById("pumpsGraph2")
         	var pumpData = {
-			    labels: ["Circ Pump", "Cond Circ Pump", "HW Circ Pump"],
+			    labels: ["Circ Pump - Motor Efficiency", "Cond Circ Pump - Motor Efficiency", "HW Circ Pump - Motor Efficiency",
+			    	    "Circ Pump - Water Flow ", "Cond Circ Pump - Water Flow", "HW Circ Pump - Water Flow"],
 			    datasets: [
-			        {
-			            label: "Water Flow",
+			    	{
+			            label: "Value",
 			            backgroundColor:'rgba(255, 99, 132, 0.2)',
-			            data: [data['pumpsWaterFlowCircPump'],data['pumpsWaterFlowCondCircPump'],data['pumpsWaterFlowHwCircPump']]
+			            data: [data['pumpsMotorEfficiencyCircPump'],data['pumpsMotorEfficiencyCondCircPump'],data['pumpsMotorEfficiencyHwCircPump'],
+			            	   data['pumpsWaterFlowCircPump'],data['pumpsWaterFlowCondCircPump'],data['pumpsWaterFlowHwCircPump']]
+			            	   
 			        },
 			        {
-			            label: "Motor Efficiency",
+			            label: "Threshold",
 			            backgroundColor:'rgba(54, 162, 235, 0.2)',
-			            data: [data['pumpsMotorEfficiencyCircPump'],data['pumpsMotorEfficiencyCondCircPump'],data['pumpsMotorEfficiencyHwCircPump']]
-			        }
+			            data: [data['pumpsMotorEfficiencyCircPumpThreshold'],data['pumpsMotorEfficiencyCondCircPumpThreshold'],data['pumpsMotorEfficiencyHwCircPumpThreshold'],
+			            	   data['pumpsWaterFlowCircPumpThreshold'],data['pumpsWaterFlowCondCircPumpThreshold'],data['pumpsWaterFlowHwCircPumpThreshold']]
+			        },
 			     ]
         	};
         	var myChart6  = new Chart(pumpsGraph2, {
-        		
-        		
         		type: 'bar',
         	    data: pumpData,
         	    options: {
@@ -250,4 +224,3 @@
     
 
 })();
-

@@ -28,7 +28,15 @@
             "fieldType": "Double"
         },
         {
+            "fieldName": "coolingCoilsNominalSensibleHeatRatioThreshold",
+            "fieldType": "Double"
+        },
+        {
             "fieldName": "coolingCoilsNominalTotalCapacity",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "coolingCoilsNominalTotalCapacityThreshold",
             "fieldType": "Double"
         },
         {
@@ -36,7 +44,15 @@
             "fieldType": "Double"
         },
         {
+            "fieldName": "heatingCoilsNominalTotalCapacityReheatCoilZone1Threshold",
+            "fieldType": "Double"
+        },
+        {
             "fieldName": "heatingCoilsNominalTotalCapacityReheatCoilZone2",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "heatingCoilsNominalTotalCapacityReheatCoilZone2Threshold",
             "fieldType": "Double"
         },
         {
@@ -44,7 +60,15 @@
             "fieldType": "Double"
         },
         {
+            "fieldName": "heatingCoilsNominalTotalCapacityReheatCoilZone3Threshold",
+            "fieldType": "Double"
+        },
+        {
             "fieldName": "fanMaxAirFlowRate",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "fanMaxAirFlowRateThreshold",
             "fieldType": "Double"
         },
         {
@@ -52,7 +76,15 @@
             "fieldType": "Double"
         },
         {
+            "fieldName": "fanRatedElectricPowerThreshold",
+            "fieldType": "Double"
+        },
+        {
             "fieldName": "fanRatedPowerPerMaxAirFlowRate",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "fanRatedPowerPerMaxAirFlowRateThreshold",
             "fieldType": "Double"
         },
         {
@@ -60,7 +92,15 @@
             "fieldType": "Double"
         },
         {
+            "fieldName": "fanMotorHeatInAirFractionThreshold",
+            "fieldType": "Double"
+        },
+        {
             "fieldName": "fanTotalEfficiency",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "fanTotalEfficiencyThreshold",
             "fieldType": "Double"
         },
         {
@@ -68,7 +108,15 @@
             "fieldType": "Double"
         },
         {
+            "fieldName": "pumpsPowerPerWaterFlowRateCircPumpThreshold",
+            "fieldType": "Double"
+        },
+        {
             "fieldName": "pumpsPowerPerWaterFlowRateHwCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsPowerPerWaterFlowRateHwCircPumpThreshold",
             "fieldType": "Double"
         },
         {
@@ -76,7 +124,15 @@
             "fieldType": "Double"
         },
         {
+            "fieldName": "pumpsPowerPerWaterFlowRateCondCircPumpThreshold",
+            "fieldType": "Double"
+        },
+        {
             "fieldName": "pumpsHeadCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsHeadCircPumpThreshold",
             "fieldType": "Double"
         },
         {
@@ -84,7 +140,15 @@
             "fieldType": "Double"
         },
         {
+            "fieldName": "pumpsHeadHwCircPumpThreshold",
+            "fieldType": "Double"
+        },
+        {
             "fieldName": "pumpsHeadCondCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsHeadCondCircPumpThreshold",
             "fieldType": "Double"
         },
         {
@@ -92,7 +156,15 @@
             "fieldType": "Double"
         },
         {
+            "fieldName": "pumpsElectricPowerCircPumpThreshold",
+            "fieldType": "Double"
+        },
+        {
             "fieldName": "pumpsElectricPowerHwCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsElectricPowerHwCircPumpThreshold",
             "fieldType": "Double"
         },
         {
@@ -100,7 +172,15 @@
             "fieldType": "Double"
         },
         {
+            "fieldName": "pumpsElectricPowerCondCircPumpThreshold",
+            "fieldType": "Double"
+        },
+        {
             "fieldName": "pumpsMotorEfficiencyCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsMotorEfficiencyCircPumpThreshold",
             "fieldType": "Double"
         },
         {
@@ -108,7 +188,15 @@
             "fieldType": "Double"
         },
         {
+            "fieldName": "pumpsMotorEfficiencyHwCircPumpThreshold",
+            "fieldType": "Double"
+        },
+        {
             "fieldName": "pumpsMotorEfficiencyCondCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsMotorEfficiencyCondCircPumpThreshold",
             "fieldType": "Double"
         },
         {
@@ -116,15 +204,27 @@
             "fieldType": "Double"
         },
         {
+            "fieldName": "pumpsWaterFlowCircPumpThreshold",
+            "fieldType": "Double"
+        },
+        {
             "fieldName": "pumpsWaterFlowHwCircPump",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsWaterFlowHwCircPumpThreshold",
             "fieldType": "Double"
         },
         {
             "fieldName": "pumpsWaterFlowCondCircPump",
             "fieldType": "Double"
+        },
+        {
+            "fieldName": "pumpsWaterFlowCondCircPumpThreshold",
+            "fieldType": "Double"
         }
     ],
-    "changelogDate": "20161121080700",
+    "changelogDate": "20161128000122",
     "entityTableName": "padset",
     "dto": "no",
     "pagination": "no",

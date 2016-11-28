@@ -1,0 +1,101 @@
+
+
+
+
+
+entity Padset {
+	mPadSetName String required
+    mLatitude Double required
+    mLongitude Double required
+    
+    coolingCoilsNominalSensibleHeatRatio Double 
+	coolingCoilsNominalSensibleHeatRatioThreshold Double
+	
+    coolingCoilsNominalTotalCapacity Double
+	coolingCoilsNominalTotalCapacityThreshold Double 
+	
+    coolingCoilsNominalSensibleHeatRatio Double
+	coolingCoilsNominalSensibleHeatRatioThreshold Double
+    
+    heatingCoilsNominalTotalCapacityReheatCoilZone1 Double
+	heatingCoilsNominalTotalCapacityReheatCoilZone1Threshold Double
+	
+    heatingCoilsNominalTotalCapacityReheatCoilZone2 Double
+	heatingCoilsNominalTotalCapacityReheatCoilZone2Threshold Double
+	
+    heatingCoilsNominalTotalCapacityReheatCoilZone3 Double
+	heatingCoilsNominalTotalCapacityReheatCoilZone3Threshold Double
+    
+    fanMaxAirFlowRate Double
+	fanMaxAirFlowRateThreshold Double
+	
+    fanRatedElectricPower Double
+	fanRatedElectricPowerThreshold Double
+	
+    fanRatedPowerPerMaxAirFlowRate Double
+	fanRatedPowerPerMaxAirFlowRateThreshold Double
+	
+    fanMotorHeatInAirFraction Double
+	fanMotorHeatInAirFractionThreshold Double
+	
+	
+    fanTotalEfficiency Double
+	fanTotalEfficiencyThreshold Double
+    
+    pumpsPowerPerWaterFlowRateCircPump Double
+	pumpsPowerPerWaterFlowRateCircPumpThreshold Double
+	
+	
+    pumpsPowerPerWaterFlowRateHWCircPump Double
+	pumpsPowerPerWaterFlowRateHWCircPumpThreshold Double
+	
+	
+    pumpsPowerPerWaterFlowRateCondCircPump Double
+	pumpsPowerPerWaterFlowRateCondCircPumpThreshold Double
+    
+    pumpsHeadCircPump Double
+	pumpsHeadCircPumpThreshold Double
+	
+	pumpsHeadHwCircPump Double
+	pumpsHeadHwCircPumpThreshold Double
+	
+	pumpsHeadCondCircPump Double
+    pumpsHeadCondCircPumpThreshold Double
+	
+	
+    pumpsElectricPowerCircPump Double 
+	pumpsElectricPowerCircPumpThreshold Double 
+	
+    pumpsElectricPowerHwCircPump Double
+	pumpsElectricPowerHwCircPumpThreshold Double
+	
+    pumpsElectricPowerCondCircPump Double
+	pumpsElectricPowerCondCircPumpThreshold Double
+    
+    pumpsMotorEfficiencyCircPump Double
+	pumpsMotorEfficiencyCircPumpThreshold Double
+    
+	pumpsMotorEfficiencyHwCircPump Double
+	pumpsMotorEfficiencyHwCircPumpThreshold Double
+	
+
+    pumpsMotorEfficiencyCondCircPump Double
+	pumpsMotorEfficiencyCondCircPumpThreshold Double
+    
+    pumpsWaterFlowCircPump Double
+	pumpsWaterFlowCircPumpThreshold Double
+    
+	pumpsWaterFlowHwCircPump Double
+	pumpsWaterFlowHwCircPumpThreshold Double
+	
+    pumpsWaterFlowCondCircPump Double 
+	pumpsWaterFlowCondCircPumpThreshold Double 
+}
+
+
+
+
+
+
+
+
