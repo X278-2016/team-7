@@ -6,6 +6,7 @@ import org.jhipster.com.domain.Padset;
 import org.jhipster.com.repository.PadsetRepository;
 import org.jhipster.com.repository.search.PadsetSearchRepository;
 import org.jhipster.com.web.rest.util.HeaderUtil;
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
@@ -64,7 +65,29 @@ public class PadsetResource {
             .headers(HeaderUtil.createEntityCreationAlert("padset", result.getId().toString()))
             .body(result);
     }
+    
+    /**
+     * POST  /padsets : Create a new padset.
+     *
+     * @param padset the padset to create
+     * @return the ResponseEntity with status 201 (Created) and with body the new padset, or with status 400 (Bad Request) if the padset has already an ID
+     * @throws URISyntaxException if the Location URI syntax is incorrect
+     */
+    @RequestMapping(value = "/create/newpadset/",
+        method = RequestMethod.POST,
+        produces = MediaType.APPLICATION_JSON_VALUE)
+    @Timed
+    public ResponseEntity<Padset> createPadsetWithJSON(@Valid @RequestBody JSONObject json) throws URISyntaxException {
+    	 System.out.println("Creating Padset from URL");
+   	     PadsetDeserializer mPadsetDeserializer = new PadsetDeserializer();
+   	     Padset padset = mPadsetDeserializer.getPadsetFromJSON(new File(json.toString()));
+         return createPadset( padset);
+    }
 
+    
+    
+    
+    
     /**
      * PUT  /padsets : Updates an existing padset.
      *
