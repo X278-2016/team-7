@@ -1,0 +1,30 @@
+
+entity PadSet {
+	name String required
+    latitude Double required
+    longitude Double required
+}
+
+entity EquipmentSet {
+	name String required
+}
+
+entity Metric {
+	name String required
+    value Double required
+}
+
+entity Threshold {
+	value Double required
+}
+relationship OneToMany {
+	PadSet{equipmentSet(name)} to EquipmentSet{padSet(name)}
+}
+
+relationship OneToOne {
+	Metric{threshold} to Threshold
+}
+
+relationship OneToMany {
+	EquipmentSet{metric} to Metric
+}
