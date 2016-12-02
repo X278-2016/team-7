@@ -34,6 +34,8 @@ import java.io.File;
 @RestController
 @RequestMapping("/api")
 public class PadsetResource {
+	
+	//Made a note of a ngrok 
 
     private final Logger log = LoggerFactory.getLogger(PadsetResource.class);
         
@@ -77,11 +79,13 @@ public class PadsetResource {
         method = RequestMethod.POST,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
-    public ResponseEntity<Padset> createPadsetWithJSON(@Valid @RequestBody JSONObject json) throws URISyntaxException {
-    	 System.out.println("Creating Padset from URL");
+    public ResponseEntity<Padset> createPadsetWithJSON(@Valid @RequestBody String json) throws URISyntaxException {
+    	 System.out.println(json.toString());
    	     PadsetDeserializer mPadsetDeserializer = new PadsetDeserializer();
-   	     Padset padset = mPadsetDeserializer.getPadsetFromJSON(new File(json.toString()));
-         return createPadset( padset);
+   	     
+   	     Padset padset = mPadsetDeserializer.getPadsetFromString(json.toString());
+   	     System.out.println(padset);
+         return createPadset(padset);
     }
 
     
@@ -190,7 +194,7 @@ public class PadsetResource {
      * 
      */
       @RequestMapping(value = "/create/padsets",
-            method = RequestMethod.GET,
+            method = RequestMethod.POST,
             produces = MediaType.APPLICATION_JSON_VALUE)
         @Timed
         public ResponseEntity<Padset> createPadsetFromURL() throws URISyntaxException {

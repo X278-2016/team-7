@@ -50,7 +50,38 @@ public class PadsetDeserializer extends StdDeserializer<Padset> {
 			e.printStackTrace();
 		}
 		 
-		 System.out.println(myPadset);
+		 //System.out.println(myPadset);
+		
+		
+		 return myPadset;
+	}
+	
+	
+	public Padset getPadsetFromString(String string) {
+		
+		 
+		 Padset myPadset = null;
+		 try {
+			//JsonNode node = jp.getCodec().readTree(jp);
+
+			ObjectMapper mapper = new ObjectMapper();
+			SimpleModule module = new SimpleModule();
+			module.addDeserializer(Padset.class, new PadsetDeserializer());
+			mapper.registerModule(module);
+			 
+			myPadset = mapper.readValue(string, Padset.class);
+		} catch (JsonParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (JsonMappingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 
+		 //System.out.println(myPadset);
 		
 		
 		 return myPadset;
@@ -63,32 +94,34 @@ public class PadsetDeserializer extends StdDeserializer<Padset> {
 	public Padset deserialize(JsonParser jp, DeserializationContext ctxt) throws IOException, JsonProcessingException {
 		// TODO Auto-generated method stub
 		
+		
 		JsonNode node = jp.getCodec().readTree(jp);
 		
-		System.out.println(node);
+		//System.out.println(node);
 		
 		//Gets Location
 		JsonNode first_name = node.get("first_name");
 		JsonNode node3 = first_name.get("General");
 		JsonNode node4 = node3.get("Value");
-		System.out.println(first_name);
-		System.out.println(node3);
-		System.out.println(node4);
+		//System.out.println(first_name);
+		//System.out.println(node3);
+		//System.out.println(node4);
 		
 		JsonNode latitude = node4.get("Latitude [deg]");
 		JsonNode longitude =  node4.get("Longitude [deg]");
-		System.out.println(latitude);
-		System.out.println(longitude);
+		//System.out.println(latitude);
+		//System.out.println(longitude);
 		
 		Double latitudeDouble = Double.parseDouble(latitude.asText());
 		Double longitudeDouble = Double.parseDouble(longitude.asText());
 		
-		System.out.println("Latitude: " + latitudeDouble + " Longitude" + longitudeDouble);
+		//System.out.println("Latitude: " + latitudeDouble + " Longitude" + longitudeDouble);
 		
 		Padset myPadset = new Padset();
 		myPadset.setmLatitude(latitudeDouble);
 		myPadset.setmLongitude(longitudeDouble);
 		myPadset.setmPadSetName("Test Padset");
+		
 		//Cooling Coils
 		myPadset.setCoolingCoilsNominalSensibleHeatRatio(first_name.get("Cooling Coils").get("Nominal Sensible Heat Ratio").get("DETAILED COOLING COIL").asDouble());
 		myPadset.setCoolingCoilsNominalTotalCapacity(first_name.get("Cooling Coils").get("Nominal Total Capacity [W]").get("DETAILED COOLING COIL").asDouble());
@@ -132,8 +165,7 @@ public class PadsetDeserializer extends StdDeserializer<Padset> {
 		
 		
 		
-		
-		System.out.println(myPadset);
+		//System.out.println(myPadset);
 		return myPadset;
 	}
 	
