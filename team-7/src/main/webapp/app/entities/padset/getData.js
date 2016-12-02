@@ -1,9 +1,12 @@
 function makeAPIcall2(){
+	var root = location.protocol + '//' + location.host;
+	root = root + "/api/padsets/"
+	console.log(root)
 	var geoarray = [];
 	$.ajax({
         type: "GET",
         dataType: "json",
-        url:"http://localhost:8080/api/padsets/"
+        url:root
     }).done(function(data){
 
        var jsonArr = data;
@@ -24,11 +27,15 @@ function makeAPIcall2(){
 
 function makeAPIcall(id){
 	console.log("Made api call with" + id)
+	var root = location.protocol + '//' + location.host;
+	root = root + "/api/padsets/"
+	root = root + "/{" + id + "}"
+	console.log(root)
 	var geoarray = [];
 	$.ajax({
         type: "GET",
         dataType: "json",
-        url:"http://localhost:8080/api/padsets" + "/{" + id + "}"
+        url:root
     }).done(function(data){
 
        var jsonArr = data;

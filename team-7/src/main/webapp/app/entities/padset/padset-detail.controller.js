@@ -25,21 +25,25 @@
         
         $scope.makeAPIcall=  function(id){
         	console.log("Made api call with" + id)
+        	var root = location.protocol + '//' + location.host;
+        	root = root + "/api/padsets"
+        	root = root + "/" + id + ""
+        	console.log(root)
         	var geoarray = [];
         	$.ajax({
                 type: "GET",
                 dataType: "json",
-                url:"http://localhost:8080/api/padsets" + "/" + id + ""
+                url:root
             }).done(function(data){
                console.log(data)
-               $scope.makeCoolingCoilGraph(data)
+               $scope.makeGraphs(data)
                
             });
         	
         	
         }
         
-        $scope.makeCoolingCoilGraph = function(data) {
+        $scope.makeGraphs = function(data) {
         	
         	
         	//Creating Cooling Coil Nominal Total Capacity 
