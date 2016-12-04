@@ -120,7 +120,7 @@ public class PadsetDeserializer extends StdDeserializer<Padset> {
 		Padset myPadset = new Padset();
 		myPadset.setmLatitude(latitudeDouble);
 		myPadset.setmLongitude(longitudeDouble);
-		myPadset.setmPadSetName("Test Padset");
+		myPadset.setmPadSetName(node3.get("Value").get("RunPeriod").asText());
 		
 		//Cooling Coils
 		myPadset.setCoolingCoilsNominalSensibleHeatRatio(first_name.get("Cooling Coils").get("Nominal Sensible Heat Ratio").get("DETAILED COOLING COIL").asDouble());
